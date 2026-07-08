@@ -1,9 +1,11 @@
+import Link from "next/link"
 import { Star } from "lucide-react"
 import { type Commodity, formatRupiah } from "@/lib/commodities"
 
 export function CommodityCard({ item }: { item: Commodity }) {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-md">
+    <Link href={`/product/${item.id}`}>
+      <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-md cursor-pointer">
       <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
         <img
           src={item.image || "/placeholder.svg"}
@@ -59,5 +61,6 @@ export function CommodityCard({ item }: { item: Commodity }) {
         </div>
       </div>
     </article>
+    </Link>
   )
 }
