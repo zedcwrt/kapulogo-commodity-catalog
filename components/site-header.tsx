@@ -40,12 +40,7 @@ export function SiteHeader() {
           </ul>
         </nav>
 
-        <a
-          href="#kontak"
-          className="rounded-full bg-accent px-5 py-2 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
-        >
-          Pesan Sekarang
-        </a>
+
       </div>
     </header>
   )

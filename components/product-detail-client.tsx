@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
 import { ArrowLeft, Star, Truck, Shield, RotateCcw } from 'lucide-react'
 import { type Commodity, formatRupiah } from '@/lib/commodities'
@@ -11,8 +10,6 @@ interface ProductDetailClientProps {
 }
 
 export function ProductDetailClient({ product, relatedProducts }: ProductDetailClientProps) {
-  const [quantity, setQuantity] = useState(1)
-
   return (
     <>
       {/* Back Button */}
@@ -109,45 +106,14 @@ export function ProductDetailClient({ product, relatedProducts }: ProductDetailC
 
           {/* CTA Section */}
           <div className="mt-8 space-y-4">
-            {/* Quantity Selector */}
-            <div className="flex items-center gap-4">
-              <label className="font-semibold text-foreground">Jumlah:</label>
-              <div className="flex items-center gap-3 rounded-lg border border-border bg-card p-2">
-                <button
-                  onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                  className="px-3 py-1 text-primary hover:opacity-80"
-                  type="button"
-                >
-                  −
-                </button>
-                <span className="w-8 text-center font-semibold text-foreground">{quantity}</span>
-                <button
-                  onClick={() => setQuantity(quantity + 1)}
-                  className="px-3 py-1 text-primary hover:opacity-80"
-                  type="button"
-                >
-                  +
-                </button>
-              </div>
-            </div>
-
-            {/* Buttons */}
-            <div className="grid gap-3 sm:grid-cols-2">
-              <button
-                type="button"
-                disabled={!product.inStock}
-                className="rounded-lg border-2 border-primary px-6 py-3 font-semibold text-primary transition-colors hover:bg-primary/5 disabled:cursor-not-allowed disabled:border-muted-foreground disabled:text-muted-foreground"
-              >
-                💬 Hubungi Penjual
-              </button>
-              <button
-                type="button"
-                disabled={!product.inStock}
-                className="rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
-              >
-                {product.inStock ? '🛒 Tambah ke Keranjang' : 'Stok Habis'}
-              </button>
-            </div>
+            {/* Contact Button */}
+            <button
+              type="button"
+              disabled={!product.inStock}
+              className="w-full rounded-lg border-2 border-primary px-6 py-3 font-semibold text-primary transition-colors hover:bg-primary/5 disabled:cursor-not-allowed disabled:border-muted-foreground disabled:text-muted-foreground"
+            >
+              💬 Hubungi Penjual
+            </button>
 
             {/* Stock Status */}
             {!product.inStock && (
