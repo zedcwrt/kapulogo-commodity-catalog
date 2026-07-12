@@ -11,21 +11,61 @@ const teamMembers = [
     name: 'Zainal Abidin',
     role: 'Project Lead & Full Stack Developer',
     bio: 'Memimpin pengembangan platform dan koordinasi tim dengan dedikasi penuh.',
+    image: '/images/team-member-1.png',
   },
   {
-    name: 'Tim Development',
-    role: 'Frontend & Backend Engineers',
-    bio: 'Membangun infrastruktur aplikasi yang robust dan user experience yang optimal.',
+    name: 'Muhammad Rizki',
+    role: 'Frontend Engineer',
+    bio: 'Mengembangkan antarmuka pengguna yang responsif dan user-friendly.',
+    image: '/images/team-member-2.png',
   },
   {
-    name: 'Tim Desain',
-    role: 'UI/UX Designers',
-    bio: 'Menciptakan desain yang indah dan intuitif untuk pengalaman pengguna terbaik.',
+    name: 'Siti Nurhaliza',
+    role: 'UI/UX Designer',
+    bio: 'Merancang visual yang menarik dan intuitif untuk pengalaman terbaik.',
+    image: '/images/team-member-3.png',
   },
   {
-    name: 'Tim Riset',
-    role: 'Data & Strategy Analysts',
-    bio: 'Melakukan riset pasar dan menganalisis kebutuhan Desa Kapulogo secara mendalam.',
+    name: 'Ahmad Hidayat',
+    role: 'Backend Engineer',
+    bio: 'Membangun server dan database yang aman dan efisien.',
+    image: '/images/team-member-4.png',
+  },
+  {
+    name: 'Eka Putri',
+    role: 'Data Analyst',
+    bio: 'Menganalisis data untuk memberikan insight bisnis yang berguna.',
+    image: '/images/team-member-5.png',
+  },
+  {
+    name: 'Bambang Suryanto',
+    role: 'DevOps Engineer',
+    bio: 'Mengelola infrastruktur dan deployment aplikasi dengan lancar.',
+    image: '/images/team-member-6.png',
+  },
+  {
+    name: 'Rini Susanti',
+    role: 'QA & Testing',
+    bio: 'Memastikan kualitas aplikasi melalui testing yang komprehensif.',
+    image: '/images/team-member-7.png',
+  },
+  {
+    name: 'Fajar Pratama',
+    role: 'Community Manager',
+    bio: 'Menjalin hubungan dengan komunitas lokal dan stakeholder desa.',
+    image: '/images/team-member-8.png',
+  },
+  {
+    name: 'Lina Wijaya',
+    role: 'Content Creator',
+    bio: 'Membuat konten dan dokumentasi untuk pengalaman pengguna yang lebih baik.',
+    image: '/images/team-member-9.png',
+  },
+  {
+    name: 'Doni Setiawan',
+    role: 'Project Coordinator',
+    bio: 'Mengkoordinasikan tim dan memastikan semua pekerjaan berjalan sesuai rencana.',
+    image: '/images/team-member-10.png',
   },
 ]
 
@@ -65,12 +105,23 @@ export default function KKNPage() {
             <ArrowLeft className="size-4" />
             Kembali ke Beranda
           </Link>
-          <h1 className="font-heading text-4xl font-semibold text-foreground sm:text-5xl">
-            Tim KKN Kapulogo
-          </h1>
-          <p className="mt-3 max-w-2xl text-base text-muted-foreground">
-            Mahasiswa Kuliah Kerja Nyata yang berkomitmen untuk memberdayakan Desa Kapulogo melalui solusi digital dan inovasi teknologi.
-          </p>
+          <div className="flex items-start gap-6">
+            <div className="hidden flex-shrink-0 sm:block">
+              <img
+                src="/images/kkn-logo.png"
+                alt="Logo Tim KKN Kapulogo"
+                className="size-24 rounded-lg object-cover"
+              />
+            </div>
+            <div>
+              <h1 className="font-heading text-4xl font-semibold text-foreground sm:text-5xl">
+                Tim KKN Kapulogo
+              </h1>
+              <p className="mt-3 max-w-2xl text-base text-muted-foreground">
+                Mahasiswa Kuliah Kerja Nyata yang berkomitmen untuk memberdayakan Desa Kapulogo melalui solusi digital dan inovasi teknologi.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -121,24 +172,30 @@ export default function KKNPage() {
           <h2 className="mb-8 font-heading text-2xl font-semibold text-foreground md:text-3xl">
             Anggota Tim
           </h2>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="overflow-hidden rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-md"
+                className="overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-md"
               >
-                <div className="flex size-12 items-center justify-center rounded-full bg-primary/10">
-                  <Users className="size-6 text-primary" />
+                <div className="aspect-video overflow-hidden bg-secondary">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
-                <h3 className="mt-4 font-heading text-lg font-semibold text-foreground">
-                  {member.name}
-                </h3>
-                <p className="mt-1 text-sm font-medium text-accent">
-                  {member.role}
-                </p>
-                <p className="mt-3 text-sm text-muted-foreground">
-                  {member.bio}
-                </p>
+                <div className="p-6">
+                  <h3 className="font-heading text-lg font-semibold text-foreground">
+                    {member.name}
+                  </h3>
+                  <p className="mt-1 text-sm font-medium text-accent">
+                    {member.role}
+                  </p>
+                  <p className="mt-3 text-sm text-muted-foreground">
+                    {member.bio}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
