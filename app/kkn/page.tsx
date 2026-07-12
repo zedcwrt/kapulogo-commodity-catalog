@@ -127,6 +127,17 @@ export default function KKNPage() {
 
       {/* Main Content */}
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        {/* Team Photo Section */}
+        <section className="mb-16">
+          <div className="overflow-hidden rounded-2xl border border-border">
+            <img
+              src="/images/kkn-team-photo.png"
+              alt="Foto tim KKN Kapulogo berkumpul"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </section>
+
         {/* Mission Section */}
         <section className="mb-16">
           <div className="rounded-2xl border border-border bg-card p-8 md:p-12">
