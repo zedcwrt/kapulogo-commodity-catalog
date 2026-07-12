@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image' // <-- Wajib di-import biar gambar kenceng dan halal di Next.js
 import { ArrowLeft, Users, Code, Lightbulb, Award, Instagram } from 'lucide-react'
 
 export const metadata = {
@@ -106,11 +107,12 @@ export default function KKNPage() {
             Kembali ke Beranda
           </Link>
           <div className="flex items-start gap-6">
-            <div className="hidden flex-shrink-0 sm:block">
-              <img
+            <div className="hidden flex-shrink-0 sm:block relative size-24">
+              <Image
                 src="/images/kkn-logo.png"
                 alt="Logo Tim KKN Kapulogo"
-                className="size-24 rounded-lg object-cover"
+                fill
+                className="rounded-lg object-cover"
               />
             </div>
             <div>
@@ -129,11 +131,13 @@ export default function KKNPage() {
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         {/* Team Photo Section */}
         <section className="mb-16">
-          <div className="overflow-hidden rounded-2xl border border-border">
-            <img
+          <div className="overflow-hidden rounded-2xl border border-border relative w-full aspect-[16/9] md:aspect-[21/9]">
+            <Image
               src="/images/kkn-team-photo.png"
               alt="Foto tim KKN Kapulogo berkumpul"
-              className="h-full w-full object-cover"
+              fill
+              className="object-cover"
+              priority
             />
           </div>
         </section>
@@ -189,11 +193,12 @@ export default function KKNPage() {
                 key={index}
                 className="overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-md"
               >
-                <div className="aspect-video overflow-hidden bg-secondary">
-                  <img
+                <div className="aspect-video overflow-hidden bg-secondary relative">
+                  <Image
                     src={member.image}
                     alt={member.name}
-                    className="h-full w-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div className="p-6">
