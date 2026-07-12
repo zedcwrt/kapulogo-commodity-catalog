@@ -1,11 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image' // <-- Wajib di-import biar gambar kenceng dan halal di Next.js
+import Image from 'next/image'
 import { ArrowLeft, Users, Code, Lightbulb, Award, Instagram } from 'lucide-react'
-
-export const metadata = {
-  title: 'Tim KKN - Katalog Komoditas Desa Kapulogo',
-  description: 'Kenali tim Kuliah Kerja Nyata yang membangun platform katalog komoditas Desa Kapulogo.',
-}
 
 const teamMembers = [
   {
@@ -107,12 +102,14 @@ export default function KKNPage() {
             Kembali ke Beranda
           </Link>
           <div className="flex items-start gap-6">
-            <div className="hidden flex-shrink-0 sm:block relative size-24">
+            <div className="hidden flex-shrink-0 sm:block">
               <Image
                 src="/images/kkn-logo.png"
                 alt="Logo Tim KKN Kapulogo"
-                fill
+                width={96}
+                height={96}
                 className="rounded-lg object-cover"
+                unoptimized
               />
             </div>
             <div>
@@ -131,13 +128,15 @@ export default function KKNPage() {
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         {/* Team Photo Section */}
         <section className="mb-16">
-          <div className="overflow-hidden rounded-2xl border border-border relative w-full aspect-[16/9] md:aspect-[21/9]">
+          <div className="overflow-hidden rounded-2xl border border-border">
             <Image
               src="/images/kkn-team-photo.png"
               alt="Foto tim KKN Kapulogo berkumpul"
-              fill
-              className="object-cover"
+              width={1200}
+              height={630}
+              className="h-full w-full object-cover"
               priority
+              unoptimized
             />
           </div>
         </section>
@@ -193,12 +192,14 @@ export default function KKNPage() {
                 key={index}
                 className="overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-md"
               >
-                <div className="aspect-video overflow-hidden bg-secondary relative">
+                <div className="aspect-video overflow-hidden bg-secondary">
                   <Image
                     src={member.image}
                     alt={member.name}
-                    fill
-                    className="object-cover"
+                    width={300}
+                    height={200}
+                    className="h-full w-full object-cover"
+                    unoptimized
                   />
                 </div>
                 <div className="p-6">
