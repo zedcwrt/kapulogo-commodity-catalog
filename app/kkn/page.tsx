@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowLeft, Users, Code, Lightbulb, Award } from 'lucide-react'
+import { ArrowLeft, Users, Code, Lightbulb, Award, Instagram } from 'lucide-react'
 
 export const metadata = {
   title: 'Tim KKN - Katalog Komoditas Desa Kapulogo',
@@ -242,6 +242,34 @@ export default function KKNPage() {
                 <p className="mt-2 text-sm text-muted-foreground">
                   Bekerja sama dengan masyarakat lokal untuk mencapai tujuan bersama.
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Instagram Section */}
+        <section className="mb-16">
+          <div className="rounded-2xl border border-border bg-gradient-to-r from-pink-50 to-purple-50 p-8 md:p-12">
+            <div className="flex flex-col items-center justify-center text-center">
+              <div className="flex size-16 items-center justify-center rounded-full bg-gradient-to-br from-pink-400 to-purple-500">
+                <Instagram className="size-8 text-white" />
+              </div>
+              <h2 className="mt-4 font-heading text-2xl font-semibold text-foreground">
+                Ikuti Instagram Kami
+              </h2>
+              <p className="mt-2 max-w-2xl text-muted-foreground">
+                Dapatkan update terbaru tentang perkembangan KKN, konten edukatif, dan cerita inspiratif dari Desa Kapulogo.
+              </p>
+              <div className="mt-6 flex flex-col items-center gap-2">
+                <p className="text-sm text-muted-foreground">@kkn.kapulogo</p>
+                <a
+                  href="https://instagram.com/kkn.kapulogo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full bg-gradient-to-r from-pink-400 to-purple-500 px-6 py-3 font-medium text-white transition-opacity hover:opacity-90"
+                >
+                  Kunjungi Instagram
+                </a>
               </div>
             </div>
           </div>
