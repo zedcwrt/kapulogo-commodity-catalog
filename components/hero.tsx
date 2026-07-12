@@ -42,7 +42,7 @@ export function Hero() {
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-medium text-muted-foreground">
             <MapPin className="size-3.5 text-accent" aria-hidden="true" />
-            Desa Kapulogo, Indonesia
+            Desa Kapulogo, Kecamatan Kepil, Kabupaten Wonosobo
           </span>
           <h1 className="mt-5 text-balance font-heading text-4xl font-semibold leading-tight text-foreground md:text-5xl lg:text-6xl">
             Hasil Bumi Terbaik, Langsung dari Petani Desa
