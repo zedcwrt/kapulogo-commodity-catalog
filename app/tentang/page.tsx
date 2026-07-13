@@ -44,16 +44,9 @@ const commodities = [
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
+      {/* Section Header */}
       <div className="border-b border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-          <Link
-            href="/"
-            className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-primary hover:opacity-80"
-          >
-            <ArrowLeft className="size-4" />
-            Kembali ke Beranda
-          </Link>
           <h1 className="font-heading text-4xl font-semibold text-foreground sm:text-5xl">
             Tentang Desa Kapulogo
           </h1>
