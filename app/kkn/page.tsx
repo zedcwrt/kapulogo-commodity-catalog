@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowLeft, Users, Code, Lightbulb, Award, Instagram } from 'lucide-react'
+import { ArrowLeft, Users, Code, Lightbulb, Award, Heart } from 'lucide-react'
 
 export const metadata = {
   title: 'Tim KKN - Katalog Komoditas Desa Kapulogo',
@@ -252,7 +252,7 @@ export default function KKNPage() {
           <div className="rounded-2xl border border-border bg-gradient-to-r from-pink-50 to-purple-50 p-8 md:p-12">
             <div className="flex flex-col items-center justify-center text-center">
               <div className="flex size-16 items-center justify-center rounded-full bg-gradient-to-br from-pink-400 to-purple-500">
-                <Instagram className="size-8 text-white" />
+                <Heart className="size-8 fill-white text-white" />
               </div>
               <h2 className="mt-4 font-heading text-2xl font-semibold text-foreground">
                 Ikuti Instagram Kami
