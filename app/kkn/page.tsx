@@ -1,10 +1,6 @@
 import Link from 'next/link'
-import { ArrowLeft, Users, Code, Lightbulb, Award, Heart } from 'lucide-react'
-
-export const metadata = {
-  title: 'Tim KKN - Katalog Komoditas Desa Kapulogo',
-  description: 'Kenali tim Kuliah Kerja Nyata yang membangun platform katalog komoditas Desa Kapulogo.',
-}
+import Image from 'next/image'
+import { ArrowLeft, Users, Code, Lightbulb, Award, Instagram } from 'lucide-react'
 
 const teamMembers = [
   {
@@ -107,10 +103,13 @@ export default function KKNPage() {
           </Link>
           <div className="flex items-start gap-6">
             <div className="hidden flex-shrink-0 sm:block">
-              <img
+              <Image
                 src="/images/kkn-logo.png"
                 alt="Logo Tim KKN Kapulogo"
-                className="size-24 rounded-lg object-cover"
+                width={96}
+                height={96}
+                className="rounded-lg object-cover"
+                unoptimized
               />
             </div>
             <div>
@@ -130,10 +129,14 @@ export default function KKNPage() {
         {/* Team Photo Section */}
         <section className="mb-16">
           <div className="overflow-hidden rounded-2xl border border-border">
-            <img
+            <Image
               src="/images/kkn-team-photo.png"
               alt="Foto tim KKN Kapulogo berkumpul"
+              width={1200}
+              height={630}
               className="h-full w-full object-cover"
+              priority
+              unoptimized
             />
           </div>
         </section>
@@ -190,10 +193,13 @@ export default function KKNPage() {
                 className="overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-md"
               >
                 <div className="aspect-video overflow-hidden bg-secondary">
-                  <img
+                  <Image
                     src={member.image}
                     alt={member.name}
+                    width={300}
+                    height={200}
                     className="h-full w-full object-cover"
+                    unoptimized
                   />
                 </div>
                 <div className="p-6">
