@@ -3,7 +3,7 @@ import { Leaf } from "lucide-react"
 const navLinks = [
   { label: "Beranda", href: "#beranda" },
   { label: "Katalog", href: "#katalog" },
-  { label: "Tentang", href: "#tentang" },
+  { label: "Tentang", href: "/tentang" },
   { label: "KKN", href: "/kkn" },
   { label: "Kontak", href: "#kontak" },
 ]
