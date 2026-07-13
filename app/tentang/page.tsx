@@ -65,6 +65,17 @@ export default function AboutPage() {
 
       {/* Main Content */}
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        {/* Hero Image */}
+        <section className="mb-16">
+          <div className="overflow-hidden rounded-2xl border border-border">
+            <img
+              src="/images/desa-landscape.png"
+              alt="Pemandangan indah Desa Kapulogo dengan sawah hijau dan rumah-rumah tradisional"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </section>
+
         {/* Introduction Section */}
         <section className="mb-16">
           <div className="grid gap-10 md:grid-cols-2">
@@ -87,6 +98,14 @@ export default function AboutPage() {
             </div>
 
             <div className="flex flex-col gap-4">
+              <div className="overflow-hidden rounded-2xl border border-border">
+                <img
+                  src="/images/peta-desa-kapulogo.png"
+                  alt="Peta geografis Desa Kapulogo"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="grid gap-2">
               {highlights.map((item) => (
                 <div
                   key={item.title}
@@ -107,6 +126,27 @@ export default function AboutPage() {
                   </div>
                 </div>
               ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Community Image Section */}
+        <section className="mb-16">
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="overflow-hidden rounded-2xl border border-border">
+              <img
+                src="/images/petani-bekerja.png"
+                alt="Petani Desa Kapulogo bekerja di sawah"
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-border">
+              <img
+                src="/images/panen-organik.png"
+                alt="Panen organik hasil bumi Desa Kapulogo"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </section>
@@ -215,6 +255,17 @@ export default function AboutPage() {
               <div className="font-heading text-4xl font-bold text-primary">500+</div>
               <p className="mt-2 text-sm text-muted-foreground">Petani Lokal</p>
             </div>
+          </div>
+        </section>
+
+        {/* Community Image */}
+        <section className="mb-16">
+          <div className="overflow-hidden rounded-2xl border border-border">
+            <img
+              src="/images/komunitas-desa.png"
+              alt="Komunitas Desa Kapulogo berkumpul dengan semangat gotong royong"
+              className="h-full w-full object-cover"
+            />
           </div>
         </section>
 
