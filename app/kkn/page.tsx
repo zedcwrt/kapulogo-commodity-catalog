@@ -91,16 +91,9 @@ const achievements = [
 export default function KKNPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
+      {/* KKN Section Header */}
       <div className="border-b border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-          <Link
-            href="/"
-            className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-primary hover:opacity-80"
-          >
-            <ArrowLeft className="size-4" />
-            Kembali ke Beranda
-          </Link>
           <div className="flex items-start gap-6">
             <div className="hidden flex-shrink-0 sm:block">
               <Image
