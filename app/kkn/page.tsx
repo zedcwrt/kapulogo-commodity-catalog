@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowLeft, Users, Code, Lightbulb, Award, Instagram } from 'lucide-react'
+import { ArrowLeft, Users, Code, Lightbulb, Award, Instagram, Heart } from 'lucide-react'
 
 const teamMembers = [
   {
