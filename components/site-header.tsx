@@ -1,18 +1,18 @@
 import { Leaf } from "lucide-react"
 
 const navLinks = [
-  { label: "Beranda", href: "#beranda" },
-  { label: "Katalog", href: "#katalog" },
+  { label: "Beranda", href: "/" },
+  { label: "Katalog", href: "/#katalog" },
   { label: "Tentang", href: "/tentang" },
   { label: "KKN", href: "/kkn" },
-  { label: "Kontak", href: "#kontak" },
+  { label: "Kontak", href: "/#kontak" },
 ]
 
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3.5 md:px-6">
-        <a href="#beranda" className="flex items-center gap-2.5">
+        <a href="/" className="flex items-center gap-2.5">
           <span className="flex size-9 items-center justify-center rounded-full bg-primary text-primary-foreground">
             <Leaf className="size-5" aria-hidden="true" />
           </span>
