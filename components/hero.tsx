@@ -143,9 +143,10 @@ export function Hero() {
 
           <div className="absolute -bottom-5 -left-3 flex items-center gap-3 rounded-2xl border border-border bg-card px-4 py-3 shadow-sm md:left-6">
             <span className="flex size-10 items-center justify-center rounded-full bg-primary/10 text-primary">
-              {heroSlides[currentSlide].icon && (
-                <heroSlides[currentSlide].icon className="size-5" aria-hidden="true" />
-              )}
+              {(() => {
+                const IconComponent = heroSlides[currentSlide].icon
+                return <IconComponent className="size-5" aria-hidden="true" />
+              })()}
             </span>
             <div className="leading-tight">
               <p className="text-sm font-semibold text-foreground">
