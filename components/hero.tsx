@@ -1,20 +1,29 @@
 'use client'
 
-import { MapPin, Sprout, ChevronLeft, ChevronRight } from "lucide-react"
+import { MapPin, Sprout, ChevronLeft, ChevronRight, Leaf, Users } from "lucide-react"
 import { useState, useEffect } from "react"
 
 const heroSlides = [
   {
     image: "/images/hero-desa.png",
     alt: "Pemandangan persawahan dan perbukitan hijau Desa Kapulogo saat matahari terbenam",
+    icon: Sprout,
+    title: "Panen Segar",
+    subtitle: "Setiap hari",
   },
   {
     image: "/images/hero-desa-2.png",
     alt: "Sawah hijau dengan petani bekerja di Desa Kapulogo saat sore hari",
+    icon: Leaf,
+    title: "Pertanian Organik",
+    subtitle: "100% Alami",
   },
   {
     image: "/images/hero-desa-3.png",
     alt: "Pasar lokal Desa Kapulogo dengan penjual hasil bumi segar",
+    icon: Users,
+    title: "Komunitas Lokal",
+    subtitle: "Bersama Petani",
   },
 ]
 
@@ -134,13 +143,16 @@ export function Hero() {
 
           <div className="absolute -bottom-5 -left-3 flex items-center gap-3 rounded-2xl border border-border bg-card px-4 py-3 shadow-sm md:left-6">
             <span className="flex size-10 items-center justify-center rounded-full bg-primary/10 text-primary">
-              <Sprout className="size-5" aria-hidden="true" />
+              {(() => {
+                const IconComponent = heroSlides[currentSlide].icon
+                return <IconComponent className="size-5" aria-hidden="true" />
+              })()}
             </span>
             <div className="leading-tight">
               <p className="text-sm font-semibold text-foreground">
-                Panen Segar
+                {heroSlides[currentSlide].title}
               </p>
-              <p className="text-xs text-muted-foreground">Setiap hari</p>
+              <p className="text-xs text-muted-foreground">{heroSlides[currentSlide].subtitle}</p>
             </div>
           </div>
         </div>
