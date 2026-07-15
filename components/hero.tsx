@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link"
 import { MapPin, Sprout, ChevronLeft, ChevronRight, Leaf, Users } from "lucide-react"
 import { useState, useEffect } from "react"
 
@@ -68,12 +69,12 @@ export function Hero() {
             >
               Lihat Katalog
             </a>
-            <a
-              href="#tentang"
+            <Link
+              href="/tentang"
               className="rounded-full border border-border bg-card px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
             >
               Tentang Desa
-            </a>
+            </Link>
           </div>
 
           <dl className="mt-10 flex gap-8">
