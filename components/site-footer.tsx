@@ -38,23 +38,7 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-heading text-base font-semibold">Jam Layanan</h3>
-            <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
-              <li className="flex justify-between gap-4">
-                <span>Senin - Jumat</span>
-                <span>07.00 - 17.00</span>
-              </li>
-              <li className="flex justify-between gap-4">
-                <span>Sabtu</span>
-                <span>07.00 - 14.00</span>
-              </li>
-              <li className="flex justify-between gap-4">
-                <span>Minggu</span>
-                <span>Tutup</span>
-              </li>
-            </ul>
-          </div>
+
         </div>
 
         <div className="mt-12 border-t border-primary-foreground/20 pt-6 text-center text-sm text-primary-foreground/70">
