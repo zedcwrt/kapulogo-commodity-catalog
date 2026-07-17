@@ -97,7 +97,7 @@ export default function KKNPage() {
           <div className="flex items-start gap-6">
             <div className="hidden flex-shrink-0 sm:block">
               <Image
-                src="/images/KKN_TIM_7_TRANSPARENT.png"
+                src="/images/kkn-logo.png"
                 alt="Logo Tim KKN Kapulogo"
                 width={96}
                 height={96}
@@ -185,12 +185,12 @@ export default function KKNPage() {
                 key={index}
                 className="overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-md"
               >
-                <div className="aspect-[3/4] overflow-hidden bg-secondary">
+                <div className="aspect-video overflow-hidden bg-secondary">
                   <Image
                     src={member.image}
                     alt={member.name}
                     width={300}
-                    height={400}
+                    height={200}
                     className="h-full w-full object-cover"
                     unoptimized
                   />
