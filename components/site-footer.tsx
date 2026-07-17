@@ -23,9 +23,15 @@ export function SiteFooter() {
           <div>
             <h3 className="font-heading text-base font-semibold">Hubungi Kami</h3>
             <ul className="mt-4 space-y-3 text-sm text-primary-foreground/80">
-              <li className="flex items-center gap-3">
-                <MapPin className="size-4 shrink-0" aria-hidden="true" />
-                Balai Desa Kapulogo, Indonesia
+              <li className="flex items-start gap-3">
+                <MapPin className="size-4 shrink-0 mt-0.5" aria-hidden="true" />
+                <span>
+                  Balai Desa Kapulogo<br />
+                  Dusun Kapulogo Tengah<br />
+                  Desa Kapulogo<br />
+                  Kecamatan Kepil<br />
+                  Kabupaten Wonosobo
+                </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="size-4 shrink-0" aria-hidden="true" />
