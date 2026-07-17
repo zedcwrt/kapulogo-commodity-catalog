@@ -1,6 +1,7 @@
 'use client'
 
-import { Leaf } from "lucide-react"
+import { useState } from "react"
+import { Leaf, Menu, X } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
@@ -14,8 +15,10 @@ const navLinks = [
 
 export function SiteHeader() {
   const pathname = usePathname()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const handleNavClick = (href: string, hash?: string) => {
+    setMobileMenuOpen(false)
     if (href === "/" && hash) {
       setTimeout(() => {
         const element = document.getElementById(hash)
@@ -43,6 +46,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
+        {/* Desktop Navigation */}
         <nav aria-label="Navigasi utama" className="hidden md:block">
           <ul className="flex items-center gap-8">
             {navLinks.map((link) => (
@@ -59,8 +63,38 @@ export function SiteHeader() {
           </ul>
         </nav>
 
-
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
+          aria-label="Toggle mobile menu"
+        >
+          {mobileMenuOpen ? (
+            <X className="size-6" />
+          ) : (
+            <Menu className="size-6" />
+          )}
+        </button>
       </div>
+
+      {/* Mobile Navigation */}
+      {mobileMenuOpen && (
+        <nav className="md:hidden border-t border-border/60 bg-background">
+          <ul className="flex flex-col px-4 py-4 gap-1">
+            {navLinks.map((link) => (
+              <li key={link.label}>
+                <Link
+                  href={link.href}
+                  onClick={() => handleNavClick(link.href, link.hash)}
+                  className="block px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground hover:bg-secondary rounded-md"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
   )
 }
