@@ -66,7 +66,7 @@ export function SiteHeader() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
+          className="md:hidden relative z-50 flex h-10 w-10 items-center justify-center rounded-lg text-foreground hover:bg-secondary transition-colors"
           aria-label="Toggle mobile menu"
         >
           {mobileMenuOpen ? (
@@ -79,14 +79,14 @@ export function SiteHeader() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <nav className="md:hidden border-t border-border/60 bg-background">
-          <ul className="flex flex-col px-4 py-4 gap-1">
+        <nav className="md:hidden absolute left-0 right-0 top-full z-40 border-t border-border/60 bg-background shadow-lg">
+          <ul className="mx-auto max-w-6xl flex flex-col px-4 py-4 gap-2">
             {navLinks.map((link) => (
               <li key={link.label}>
                 <Link
                   href={link.href}
                   onClick={() => handleNavClick(link.href, link.hash)}
-                  className="block px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground hover:bg-secondary rounded-md"
+                  className="block px-4 py-3 text-sm font-medium text-foreground transition-colors hover:text-primary hover:bg-secondary/50 rounded-md"
                 >
                   {link.label}
                 </Link>
