@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     'Jelajahi hasil bumi dan produk unggulan Desa Kapulogo — dari beras organik, kopi, kapulaga, hingga kerajinan bambu. Segar langsung dari petani lokal.',
   icons: {
-    icon: '/icon.svg',
+    icon: '/icon.png',
     apple: '/icon.png',
   },
 }
