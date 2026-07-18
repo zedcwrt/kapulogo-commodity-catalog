@@ -107,7 +107,7 @@ export default function KKNPage() {
             </div>
             <div>
               <h1 className="font-heading text-4xl font-semibold text-foreground sm:text-5xl">
-                Tim KKN Kapulogo
+                Tim 7 KKN UNTIDAR Wonosobo 2026
               </h1>
               <p className="mt-3 max-w-2xl text-base text-muted-foreground">
                 Mahasiswa Kuliah Kerja Nyata yang berkomitmen untuk memberdayakan Desa Kapulogo melalui solusi digital dan inovasi teknologi.
@@ -141,7 +141,7 @@ export default function KKNPage() {
               Misi Kami
             </h2>
             <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
-              Kami adalah sekelompok mahasiswa yang tergabung dalam program Kuliah Kerja Nyata (KKN). Melalui dedikasi dan kerja keras, kami membangun platform katalog komoditas digital untuk Desa Kapulogo. Tujuan kami adalah memberdayakan petani dan pengrajin lokal dengan memberikan akses ke pasar yang lebih luas melalui teknologi digital yang mudah digunakan dan terjangkau.
+              Kami membawa misi terpadu untuk membangun Desa Kapulogo yang lebih maju, sehat, dan berdaya saing. Fokus gerakan kami terbagi dalam tiga pilar utama: pertama, melakukan akselerasi digitalisasi komoditas lokal agar produk unggulan desa mampu bersaing di pasar modern. Kedua, mengedukasi masyarakat mengenai pemenuhan gizi seimbang demi memutus mata rantai stunting pada anak. Ketiga, meningkatkan kesadaran warga dalam mendeteksi dan mencegah penyebaran TBC secara dini. Melalui kolaborasi aktif ini, kami berupaya meletakkan fondasi transformasi ekonomi dan kesehatan demi masa depan desa yang lebih baik.
             </p>
           </div>
         </section>
@@ -260,7 +260,7 @@ export default function KKNPage() {
                 Dapatkan update terbaru tentang perkembangan KKN, konten edukatif, dan cerita inspiratif dari Desa Kapulogo.
               </p>
               <div className="mt-6 flex flex-col items-center gap-2">
-                <p className="text-sm text-muted-foreground">@kkn.kapulogo</p>
+                <p className="text-sm text-muted-foreground">@kapulogo.moments</p>
                 <a
                   href="https://instagram.com/kkn.kapulogo"
                   target="_blank"
