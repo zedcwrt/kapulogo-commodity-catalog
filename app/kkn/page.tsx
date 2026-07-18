@@ -199,7 +199,7 @@ export default function KKNPage() {
                   <h3 className="font-heading text-lg font-semibold text-foreground">
                     {member.name}
                   </h3>
-                  <p className="mt-1 text-sm font-medium text-accent">
+                  <p className="mt-1 text-sm font-semibold text-primary">
                     {member.role}
                   </p>
                   <p className="mt-3 text-sm text-muted-foreground">
