@@ -13,7 +13,6 @@ export type Commodity = {
   image: string
   description: string
   producer: string
-  rating: number
   inStock: boolean
   featured?: boolean
 }
@@ -36,7 +35,6 @@ export const commodities: Commodity[] = [
     description:
       "Beras pulen hasil panen sawah tadah hujan tanpa pestisida kimia. Ditanam dengan metode organik turun-temurun.",
     producer: "Kelompok Tani Sri Rejeki",
-    rating: 4.9,
     inStock: true,
     featured: true,
   },
@@ -50,7 +48,6 @@ export const commodities: Commodity[] = [
     description:
       "Biji kopi robusta dari kebun di lereng bukit ketinggian 800 mdpl. Aroma kuat dengan sentuhan cokelat.",
     producer: "Koperasi Kopi Kapulogo",
-    rating: 4.8,
     inStock: true,
     featured: true,
   },
@@ -64,7 +61,7 @@ export const commodities: Commodity[] = [
     description:
       "Rempah kapulaga hijau dengan aroma harum khas, dipetik dan dijemur secara alami. Komoditas ikonik desa.",
     producer: "Tani Rempah Lestari",
-    rating: 5.0,
+
     inStock: true,
     featured: true,
   },
@@ -78,7 +75,7 @@ export const commodities: Commodity[] = [
     description:
       "Gula aren murni hasil sadapan nira pohon aren, dimasak tradisional tanpa pemanis tambahan.",
     producer: "Pak Darto",
-    rating: 4.7,
+
     inStock: true,
   },
   {
@@ -91,7 +88,7 @@ export const commodities: Commodity[] = [
     description:
       "Madu liar dari lebah hutan di sekitar desa. Mentah, tidak dipanaskan, dan kaya enzim alami.",
     producer: "Kelompok Madu Wana Sari",
-    rating: 4.9,
+
     inStock: true,
   },
   {
@@ -104,7 +101,7 @@ export const commodities: Commodity[] = [
     description:
       "Cabai merah keriting segar dipetik pagi hari. Pedas mantap, cocok untuk sambal dan masakan rumahan.",
     producer: "Kelompok Tani Maju Bersama",
-    rating: 4.6,
+
     inStock: false,
   },
   {
@@ -117,7 +114,7 @@ export const commodities: Commodity[] = [
     description:
       "Telur ayam kampung dari peternakan umbaran. Kuning telur pekat dan kaya nutrisi.",
     producer: "Peternakan Berkah Tani",
-    rating: 4.8,
+
     inStock: true,
   },
   {
@@ -130,7 +127,7 @@ export const commodities: Commodity[] = [
     description:
       "Bayam hijau segar tanpa pestisida, dipanen langsung dari kebun warga setiap pagi.",
     producer: "Kebun Sayur Lestari",
-    rating: 4.5,
+
     inStock: true,
   },
   {
@@ -143,7 +140,7 @@ export const commodities: Commodity[] = [
     description:
       "Kerajinan keranjang bambu buatan tangan pengrajin desa. Kuat, ramah lingkungan, dan estetis.",
     producer: "Sanggar Bambu Kapulogo",
-    rating: 4.9,
+
     inStock: true,
   },
 ]
