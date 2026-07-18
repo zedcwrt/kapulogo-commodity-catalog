@@ -262,7 +262,7 @@ export default function KKNPage() {
               <div className="mt-6 flex flex-col items-center gap-2">
                 <p className="text-sm text-muted-foreground">@kapulogo.moments</p>
                 <a
-                  href="https://instagram.com/kkn.kapulogo"
+                  href="https://instagram.com/kapulogo.moments"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full bg-gradient-to-r from-pink-400 to-purple-500 px-6 py-3 font-medium text-white transition-opacity hover:opacity-90"
