@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { Star } from "lucide-react"
 import { type Commodity, formatRupiah } from "@/lib/commodities"
 
 export function CommodityCard({ item }: { item: Commodity }) {
@@ -23,18 +22,9 @@ export function CommodityCard({ item }: { item: Commodity }) {
       </div>
 
       <div className="flex flex-1 flex-col p-4">
-        <div className="flex items-start justify-between gap-2">
-          <h3 className="font-heading text-lg font-semibold leading-snug text-foreground">
-            {item.name}
-          </h3>
-          <span className="flex shrink-0 items-center gap-1 text-sm text-foreground">
-            <Star
-              className="size-3.5 fill-accent text-accent"
-              aria-hidden="true"
-            />
-            {item.rating.toFixed(1)}
-          </span>
-        </div>
+        <h3 className="font-heading text-lg font-semibold leading-snug text-foreground">
+          {item.name}
+        </h3>
 
         <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
           {item.description}

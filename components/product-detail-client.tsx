@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowLeft, Star, Truck, Shield, RotateCcw, X } from 'lucide-react'
+import { ArrowLeft, Truck, Shield, RotateCcw, X } from 'lucide-react'
 import { type Commodity, formatRupiah } from '@/lib/commodities'
 
 interface ProductDetailClientProps {
@@ -60,15 +60,6 @@ export function ProductDetailClient({ product, relatedProducts }: ProductDetailC
             <h1 className="font-heading text-3xl font-semibold text-foreground sm:text-4xl">
               {product.name}
             </h1>
-
-            {/* Rating */}
-            <div className="mt-4 flex items-center gap-4">
-              <div className="flex items-center gap-1">
-                <Star className="size-5 fill-accent text-accent" />
-                <span className="font-semibold text-foreground">{product.rating.toFixed(1)}</span>
-                <span className="text-sm text-muted-foreground">(berdasarkan 48 ulasan)</span>
-              </div>
-            </div>
 
             {/* Price */}
             <div className="mt-6 border-b border-t border-border py-6">
@@ -215,11 +206,10 @@ export function ProductDetailClient({ product, relatedProducts }: ProductDetailC
                     {item.name}
                   </h3>
                   <p className="mt-2 text-xs text-muted-foreground">{item.producer}</p>
-                  <div className="mt-3 flex items-end justify-between border-t border-border pt-3">
+                  <div className="mt-3 border-t border-border pt-3">
                     <span className="font-heading text-sm font-semibold text-foreground">
                       {formatRupiah(item.price)}
                     </span>
-                    <Star className="size-3.5 fill-accent text-accent" />
                   </div>
                 </div>
               </Link>
