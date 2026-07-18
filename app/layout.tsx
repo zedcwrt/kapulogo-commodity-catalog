@@ -19,23 +19,9 @@ export const metadata: Metadata = {
   title: 'Katalog Komoditas Desa Kapulogo',
   description:
     'Jelajahi hasil bumi dan produk unggulan Desa Kapulogo — dari beras organik, kopi, kapulaga, hingga kerajinan bambu. Segar langsung dari petani lokal.',
-  generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/icon.svg',
+    apple: '/icon.png',
   },
 }
 
