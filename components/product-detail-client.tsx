@@ -1,7 +1,8 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowLeft, Star, Truck, Shield, RotateCcw } from 'lucide-react'
+import { ArrowLeft, Star, Truck, Shield, RotateCcw, X } from 'lucide-react'
 import { type Commodity, formatRupiah } from '@/lib/commodities'
 
 interface ProductDetailClientProps {
@@ -10,6 +11,21 @@ interface ProductDetailClientProps {
 }
 
 export function ProductDetailClient({ product, relatedProducts }: ProductDetailClientProps) {
+  const [showContactModal, setShowContactModal] = useState(false)
+
+  const handleContactClick = () => {
+    setShowContactModal(true)
+  }
+
+  const handleWhatsAppClick = () => {
+    const phoneNumber = '6281331055037'
+    const message = `Halo, saya ingin menanyakan tentang produk *${product.name}* dari Desa Kapulogo.\n\nHarga: ${formatRupiah(product.price)} per ${product.unit}\nProdusen: ${product.producer}\n\nBisakah Anda memberikan informasi lebih lanjut?`
+    const encodedMessage = encodeURIComponent(message)
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+    window.open(whatsappUrl, '_blank')
+    setShowContactModal(false)
+  }
+
   return (
     <>
       {/* Back Button */}
@@ -109,6 +125,7 @@ export function ProductDetailClient({ product, relatedProducts }: ProductDetailC
             {/* Contact Button */}
             <button
               type="button"
+              onClick={handleContactClick}
               disabled={!product.inStock}
               className="w-full rounded-lg border-2 border-primary px-6 py-3 font-semibold text-primary transition-colors hover:bg-primary/5 disabled:cursor-not-allowed disabled:border-muted-foreground disabled:text-muted-foreground"
             >
@@ -124,6 +141,54 @@ export function ProductDetailClient({ product, relatedProducts }: ProductDetailC
           </div>
         </div>
       </div>
+
+      {/* Contact Modal */}
+      {showContactModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+          <div className="relative w-full max-w-md rounded-2xl border border-border bg-background p-6 shadow-xl">
+            {/* Close Button */}
+            <button
+              onClick={() => setShowContactModal(false)}
+              className="absolute right-4 top-4 rounded-full p-1 hover:bg-secondary transition-colors"
+              aria-label="Close"
+            >
+              <X className="size-5 text-muted-foreground" />
+            </button>
+
+            {/* Modal Content */}
+            <div className="mt-2">
+              <h2 className="font-heading text-2xl font-semibold text-foreground">
+                Hubungi Penjual
+              </h2>
+              <p className="mt-2 text-muted-foreground">
+                Tanyakan lebih lanjut tentang produk {product.name} melalui WhatsApp
+              </p>
+
+              {/* Product Info */}
+              <div className="mt-6 rounded-lg bg-secondary/40 p-4">
+                <h3 className="font-semibold text-foreground">{product.name}</h3>
+                <p className="mt-1 text-sm text-muted-foreground">{product.producer}</p>
+                <p className="mt-2 font-heading text-lg font-semibold text-primary">
+                  {formatRupiah(product.price)} per {product.unit}
+                </p>
+              </div>
+
+              {/* WhatsApp Button */}
+              <button
+                onClick={handleWhatsAppClick}
+                className="mt-6 w-full rounded-lg bg-green-500 px-6 py-3 font-semibold text-white transition-opacity hover:opacity-90 flex items-center justify-center gap-2"
+              >
+                💬 Hubungi via WhatsApp
+              </button>
+
+              {/* Info Text */}
+              <p className="mt-4 text-center text-xs text-muted-foreground">
+                Nomor: +62 813 3105 5037
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Related Products */}
       {relatedProducts.length > 0 && (
