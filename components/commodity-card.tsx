@@ -34,7 +34,7 @@ export function CommodityCard({ item }: { item: Commodity }) {
           Produsen: <span className="text-foreground">{item.producer}</span>
         </p>
 
-        <div className="mt-4 flex items-end justify-between border-t border-border pt-4">
+        <div className="mt-auto flex flex-col gap-3 border-t border-border pt-4">
           <div>
             <span className="font-heading text-xl font-semibold text-foreground">
               {formatRupiah(item.price)}
@@ -44,9 +44,9 @@ export function CommodityCard({ item }: { item: Commodity }) {
           <button
             type="button"
             disabled={!item.inStock}
-            className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
+            className="w-full rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-accent-foreground transition-all hover:opacity-90 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
           >
-            {item.inStock ? "Pesan" : "Habis"}
+            {item.inStock ? "💬 Pesan" : "Stok Habis"}
           </button>
         </div>
       </div>
