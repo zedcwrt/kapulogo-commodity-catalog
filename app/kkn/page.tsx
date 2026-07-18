@@ -97,7 +97,7 @@ export default function KKNPage() {
           <div className="flex items-start gap-6">
             <div className="hidden flex-shrink-0 sm:block">
               <Image
-                src="/images/kkn-logo.png"
+                src="/images/KKN_TIM_7_TRANSPARENT.png"
                 alt="Logo Tim KKN Kapulogo"
                 width={96}
                 height={96}
