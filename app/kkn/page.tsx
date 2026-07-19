@@ -67,24 +67,19 @@ const teamMembers = [
 
 const achievements = [
   {
+    icon: Users,
+    title: 'Menjalin Komunikasi dan Interaksi yang Hangat dengan Warga',
+    description: 'Membangun hubungan erat dan komunikasi dua arah yang bermakna dengan seluruh lapisan masyarakat Desa Kapulogo.',
+  },
+  {
     icon: Code,
     title: 'Platform Katalog Modern',
     description: 'Membangun website katalog komoditas dengan teknologi terkini dan desain responsif.',
   },
   {
-    icon: Users,
-    title: 'Pemberdayaan UMKM',
-    description: 'Membantu usaha mikro kecil menengah lokal untuk menjangkau pasar yang lebih luas.',
-  },
-  {
     icon: Lightbulb,
-    title: 'Inovasi Lokal',
-    description: 'Menghadirkan solusi digital untuk permasalahan ekonomi di tingkat desa.',
-  },
-  {
-    icon: Award,
-    title: 'Dampak Berkelanjutan',
-    description: 'Menciptakan ekosistem digital yang mendukung pertumbuhan ekonomi jangka panjang.',
+    title: 'Sosialisasi dan Peningkatan Kesadaran Mengenai TBC dan Stunting',
+    description: 'Meningkatkan pemahaman dan kesadaran masyarakat tentang pencegahan TBC dan pengurangan stunting pada anak.',
   },
 ]
 
