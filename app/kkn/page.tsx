@@ -4,63 +4,63 @@ import { ArrowLeft, Users, Code, Lightbulb, Award, Instagram, Heart } from 'luci
 
 const teamMembers = [
   {
-    name: 'Zainal Abidin',
-    role: 'Project Lead & Full Stack Developer',
-    bio: 'Memimpin pengembangan platform dan koordinasi tim dengan dedikasi penuh.',
+    name: 'Muhammad Fariz Wirayudha',
+    role: 'Ketua Tim',
+    bio: 'S1 Teknologi Informasi',
     image: '/images/team-member-1.png',
   },
   {
-    name: 'Muhammad Rizki',
-    role: 'Frontend Engineer',
-    bio: 'Mengembangkan antarmuka pengguna yang responsif dan user-friendly.',
+    name: 'Elviya Nurjanah S',
+    role: 'Sekretaris',
+    bio: 'S1 Agroteknologi',
     image: '/images/team-member-2.png',
   },
   {
-    name: 'Siti Nurhaliza',
-    role: 'UI/UX Designer',
-    bio: 'Merancang visual yang menarik dan intuitif untuk pengalaman terbaik.',
+    name: 'Choiruly Inayah',
+    role: 'Sekretaris',
+    bio: 'S1 Ilmu Administrasi Negara',
     image: '/images/team-member-3.png',
   },
   {
-    name: 'Ahmad Hidayat',
-    role: 'Backend Engineer',
-    bio: 'Membangun server dan database yang aman dan efisien.',
+    name: 'Merliani Riskiana',
+    role: 'Bendahara',
+    bio: 'S1 Hukum',
     image: '/images/team-member-4.png',
   },
   {
-    name: 'Eka Putri',
-    role: 'Data Analyst',
-    bio: 'Menganalisis data untuk memberikan insight bisnis yang berguna.',
+    name: 'Azqia Fattimah Az-Zahra',
+    role: 'Bendahara',
+    bio: 'S1 Teknologi Informasi',
     image: '/images/team-member-5.png',
   },
   {
-    name: 'Bambang Suryanto',
-    role: 'DevOps Engineer',
-    bio: 'Mengelola infrastruktur dan deployment aplikasi dengan lancar.',
+    name: 'Dyah Ayoe Jovita Sari',
+    role: 'Acara',
+    bio: 'S1 Teknik Industri',
     image: '/images/team-member-6.png',
   },
   {
-    name: 'Rini Susanti',
-    role: 'QA & Testing',
-    bio: 'Memastikan kualitas aplikasi melalui testing yang komprehensif.',
+    name: 'Hilmi Akhmad',
+    role: 'Humas',
+    bio: 'S1 Teknik Elektro',
     image: '/images/team-member-7.png',
   },
   {
-    name: 'Fajar Pratama',
-    role: 'Community Manager',
-    bio: 'Menjalin hubungan dengan komunitas lokal dan stakeholder desa.',
+    name: 'Okta Dwi Rahma',
+    role: 'Humas',
+    bio: 'S1 Gizi',
     image: '/images/team-member-8.png',
   },
   {
-    name: 'Lina Wijaya',
-    role: 'Content Creator',
-    bio: 'Membuat konten dan dokumentasi untuk pengalaman pengguna yang lebih baik.',
+    name: 'M Yasid Bastomi',
+    role: 'PDD',
+    bio: 'S1 Agroteknologi',
     image: '/images/team-member-9.png',
   },
   {
-    name: 'Doni Setiawan',
-    role: 'Project Coordinator',
-    bio: 'Mengkoordinasikan tim dan memastikan semua pekerjaan berjalan sesuai rencana.',
+    name: 'Wahyu Mulyo Sejati',
+    role: 'PDD',
+    bio: 'S1 Ilmu Administrasi Negara',
     image: '/images/team-member-10.png',
   },
 ]
@@ -97,7 +97,7 @@ export default function KKNPage() {
           <div className="flex items-start gap-6">
             <div className="hidden flex-shrink-0 sm:block">
               <Image
-                src="/images/kkn-logo.png"
+                src="/images/KKN_TIM_7_TRANSPARENT.png"
                 alt="Logo Tim KKN Kapulogo"
                 width={96}
                 height={96}
@@ -107,7 +107,7 @@ export default function KKNPage() {
             </div>
             <div>
               <h1 className="font-heading text-4xl font-semibold text-foreground sm:text-5xl">
-                Tim KKN Kapulogo
+                Tim 7 KKN UNTIDAR Wonosobo 2026
               </h1>
               <p className="mt-3 max-w-2xl text-base text-muted-foreground">
                 Mahasiswa Kuliah Kerja Nyata yang berkomitmen untuk memberdayakan Desa Kapulogo melalui solusi digital dan inovasi teknologi.
@@ -141,7 +141,7 @@ export default function KKNPage() {
               Misi Kami
             </h2>
             <p className="mt-4 max-w-3xl leading-relaxed text-muted-foreground">
-              Kami adalah sekelompok mahasiswa yang tergabung dalam program Kuliah Kerja Nyata (KKN). Melalui dedikasi dan kerja keras, kami membangun platform katalog komoditas digital untuk Desa Kapulogo. Tujuan kami adalah memberdayakan petani dan pengrajin lokal dengan memberikan akses ke pasar yang lebih luas melalui teknologi digital yang mudah digunakan dan terjangkau.
+              Kami membawa misi terpadu untuk membangun Desa Kapulogo yang lebih maju, sehat, dan berdaya saing. Fokus gerakan kami terbagi dalam tiga pilar utama: pertama, melakukan akselerasi digitalisasi komoditas lokal agar produk unggulan desa mampu bersaing di pasar modern. Kedua, mengedukasi masyarakat mengenai pemenuhan gizi seimbang demi memutus mata rantai stunting pada anak. Ketiga, meningkatkan kesadaran warga dalam mendeteksi dan mencegah penyebaran TBC secara dini. Melalui kolaborasi aktif ini, kami berupaya meletakkan fondasi transformasi ekonomi dan kesehatan demi masa depan desa yang lebih baik.
             </p>
           </div>
         </section>
@@ -199,7 +199,7 @@ export default function KKNPage() {
                   <h3 className="font-heading text-lg font-semibold text-foreground">
                     {member.name}
                   </h3>
-                  <p className="mt-1 text-sm font-medium text-accent">
+                  <p className="mt-1 text-sm font-semibold text-primary">
                     {member.role}
                   </p>
                   <p className="mt-3 text-sm text-muted-foreground">
@@ -260,9 +260,9 @@ export default function KKNPage() {
                 Dapatkan update terbaru tentang perkembangan KKN, konten edukatif, dan cerita inspiratif dari Desa Kapulogo.
               </p>
               <div className="mt-6 flex flex-col items-center gap-2">
-                <p className="text-sm text-muted-foreground">@kkn.kapulogo</p>
+                <p className="text-sm text-muted-foreground">@kapulogo.moments</p>
                 <a
-                  href="https://instagram.com/kkn.kapulogo"
+                  href="https://instagram.com/kapulogo.moments"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full bg-gradient-to-r from-pink-400 to-purple-500 px-6 py-3 font-medium text-white transition-opacity hover:opacity-90"
