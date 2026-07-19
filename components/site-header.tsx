@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Leaf, Menu, X } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -16,6 +16,11 @@ const navLinks = [
 export function SiteHeader() {
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isHydrated, setIsHydrated] = useState(false)
+
+  useEffect(() => {
+    setIsHydrated(true)
+  }, [])
 
   const handleNavClick = (href: string, hash?: string) => {
     setMobileMenuOpen(false)
@@ -78,7 +83,7 @@ export function SiteHeader() {
       </div>
 
       {/* Mobile Navigation */}
-      {mobileMenuOpen && (
+      {isHydrated && mobileMenuOpen && (
         <nav className="md:hidden absolute left-0 right-0 top-full z-40 border-t border-border/60 bg-background shadow-lg">
           <ul className="mx-auto max-w-6xl flex flex-col px-4 py-4 gap-2">
             {navLinks.map((link) => (
