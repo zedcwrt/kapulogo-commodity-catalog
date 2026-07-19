@@ -185,12 +185,12 @@ export default function KKNPage() {
                 key={index}
                 className="overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-md"
               >
-                <div className="aspect-video overflow-hidden bg-secondary">
+                <div className="aspect-square overflow-hidden bg-secondary">
                   <Image
                     src={member.image}
                     alt={member.name}
                     width={300}
-                    height={200}
+                    height={300}
                     className="h-full w-full object-cover"
                     unoptimized
                   />
