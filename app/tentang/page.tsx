@@ -1,33 +1,10 @@
 import Link from 'next/link'
-import { ArrowLeft, Leaf, Users, Sprout, Mountain, MapPin, History } from 'lucide-react'
+import { History } from 'lucide-react'
 
 export const metadata = {
   title: 'Tentang Desa Kapulogo',
   description: 'Pelajari lebih lanjut tentang Desa Kapulogo, sejarah, budaya, dan komunitas pertanian yang subur.',
 }
-
-const highlights = [
-  {
-    icon: Mountain,
-    title: 'Lokasi Strategis',
-    description: 'Berlokasi di lereng perbukitan dengan tanah subur dan iklim tropis ideal untuk pertanian.',
-  },
-  {
-    icon: Sprout,
-    title: 'Pertanian Organik',
-    description: 'Menerapkan praktik pertanian berkelanjutan tanpa bahan kimia berbahaya untuk lingkungan.',
-  },
-  {
-    icon: Users,
-    title: 'Komunitas Kuat',
-    description: 'Kelompok tani yang solid dan bersatu dalam mengembangkan ekonomi desa.',
-  },
-  {
-    icon: Leaf,
-    title: 'Kualitas Premium',
-    description: 'Hasil panen pilihan yang diseleksi dengan standar kualitas tinggi.',
-  },
-]
 
 const commodities = [
   { name: 'Beras Organik', category: 'Pertanian' },
@@ -90,36 +67,17 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-4">
-              <div className="overflow-hidden rounded-2xl border border-border">
-                <img
-                  src="/images/peta-desa-kapulogo.png"
-                  alt="Peta geografis Desa Kapulogo"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <div className="grid gap-2">
-              {highlights.map((item) => (
-                <div
-                  key={item.title}
-                  className="rounded-xl border border-border bg-card p-5 transition-shadow hover:shadow-md"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
-                      <item.icon className="size-5" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading text-lg font-semibold text-foreground">
-                        {item.title}
-                      </h3>
-                      <p className="mt-1 text-sm text-muted-foreground">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-              </div>
+            <div className="overflow-hidden rounded-2xl border border-border">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.8234567890123!2d109.8234567!3d-7.4567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e656d1234567%3A0x1234567890abcdef!2sBalai%20Desa%20Kapulogo!5e0!3m2!1sid!2sid!4v1234567890123"
+                width="100%"
+                height="500"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg"
+              />
             </div>
           </div>
         </section>
