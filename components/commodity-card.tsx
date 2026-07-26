@@ -3,54 +3,54 @@ import { type Commodity, formatRupiah } from "@/lib/commodities"
 
 export function CommodityCard({ item }: { item: Commodity }) {
   return (
-    <Link href={`/product/${item.id}`}>
-      <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-md cursor-pointer">
-      <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
-        <img
-          src={item.image || "/placeholder.svg"}
-          alt={item.name}
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        <span className="absolute left-3 top-3 rounded-full bg-background/90 px-2.5 py-1 text-xs font-medium text-foreground backdrop-blur">
-          {item.category}
-        </span>
-        {!item.inStock && (
-          <span className="absolute right-3 top-3 rounded-full bg-foreground/80 px-2.5 py-1 text-xs font-medium text-background">
-            Stok Habis
+    <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-md">
+      <Link href={`/product/${item.id}`} className="cursor-pointer">
+        <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
+          <img
+            src={item.image || "/placeholder.svg"}
+            alt={item.name}
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <span className="absolute left-3 top-3 rounded-full bg-background/90 px-2.5 py-1 text-xs font-medium text-foreground backdrop-blur">
+            {item.category}
           </span>
-        )}
-      </div>
-
-      <div className="flex flex-1 flex-col p-4">
-        <h3 className="font-heading text-lg font-semibold leading-snug text-foreground">
-          {item.name}
-        </h3>
-
-        <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
-          {item.description}
-        </p>
-
-        <p className="mt-3 text-xs text-muted-foreground">
-          Produsen: <span className="text-foreground">{item.producer}</span>
-        </p>
-
-        <div className="mt-auto flex flex-col gap-3 border-t border-border pt-4">
-          <div>
-            <span className="font-heading text-xl font-semibold text-foreground">
-              {formatRupiah(item.price)}
+          {!item.inStock && (
+            <span className="absolute right-3 top-3 rounded-full bg-foreground/80 px-2.5 py-1 text-xs font-medium text-background">
+              Stok Habis
             </span>
-            <span className="text-sm text-muted-foreground"> / {item.unit}</span>
-          </div>
-          <button
-            type="button"
-            disabled={!item.inStock}
-            className="w-full cursor-pointer rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-accent-foreground transition-all hover:opacity-90 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            {item.inStock ? "💬 Pesan" : "Stok Habis"}
-          </button>
+          )}
         </div>
+
+        <div className="flex flex-1 flex-col p-4">
+          <h3 className="font-heading text-lg font-semibold leading-snug text-foreground">
+            {item.name}
+          </h3>
+
+          <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
+            {item.description}
+          </p>
+
+          <p className="mt-3 text-xs text-muted-foreground">
+            Produsen: <span className="text-foreground">{item.producer}</span>
+          </p>
+        </div>
+      </Link>
+
+      <div className="flex flex-col gap-3 border-t border-border p-4 pt-4">
+        <div>
+          <span className="font-heading text-xl font-semibold text-foreground">
+            {formatRupiah(item.price)}
+          </span>
+          <span className="text-sm text-muted-foreground"> / {item.unit}</span>
+        </div>
+        <button
+          type="button"
+          disabled={!item.inStock}
+          className="w-full cursor-pointer rounded-lg bg-accent px-4 py-2.5 text-sm font-semibold text-accent-foreground transition-all hover:opacity-90 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          {item.inStock ? "💬 Pesan" : "Stok Habis"}
+        </button>
       </div>
     </article>
-    </Link>
   )
 }
