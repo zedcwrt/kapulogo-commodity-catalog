@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { ArrowLeft, Truck, Shield, RotateCcw, X } from 'lucide-react'
+import { ArrowLeft, X } from 'lucide-react'
 import { type Commodity, formatRupiah } from '@/lib/commodities'
 
 interface ProductDetailClientProps {
@@ -82,31 +82,6 @@ export function ProductDetailClient({ product, relatedProducts }: ProductDetailC
               <div className="text-sm text-muted-foreground">Diproduksi oleh</div>
               <div className="mt-1 font-heading text-lg font-semibold text-foreground">
                 {product.producer}
-              </div>
-            </div>
-
-            {/* Features */}
-            <div className="mt-8 grid gap-4 sm:grid-cols-3">
-              <div className="flex items-start gap-3">
-                <Truck className="mt-1 size-5 text-primary" />
-                <div>
-                  <div className="font-semibold text-foreground">Pengiriman Cepat</div>
-                  <div className="text-sm text-muted-foreground">3-5 hari kerja</div>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Shield className="mt-1 size-5 text-primary" />
-                <div>
-                  <div className="font-semibold text-foreground">Produk Asli</div>
-                  <div className="text-sm text-muted-foreground">Langsung dari produsen</div>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <RotateCcw className="mt-1 size-5 text-primary" />
-                <div>
-                  <div className="font-semibold text-foreground">Garansi Uang Kembali</div>
-                  <div className="text-sm text-muted-foreground">Jika tidak puas</div>
-                </div>
               </div>
             </div>
           </div>
