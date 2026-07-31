@@ -45,7 +45,6 @@ export function CommodityCard({ item }: { item: Commodity }) {
           <button
             type="button"
             disabled={!item.inStock}
-            onClick={(e) => e.stopPropagation()}
             className="w-full cursor-pointer rounded-lg bg-white px-4 py-2.5 text-sm font-semibold text-accent transition-all hover:opacity-90 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
           >
             {item.inStock ? "Pesan" : "Stok Habis"}
