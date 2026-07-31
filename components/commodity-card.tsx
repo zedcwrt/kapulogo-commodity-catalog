@@ -3,8 +3,8 @@ import { type Commodity, formatRupiah } from "@/lib/commodities"
 
 export function CommodityCard({ item }: { item: Commodity }) {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-md">
-      <Link href={`/product/${item.id}`} className="cursor-pointer">
+    <Link href={`/product/${item.id}`}>
+      <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-shadow hover:shadow-md cursor-pointer">
         <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
           <img
             src={item.image || "/placeholder.svg"}
@@ -34,23 +34,23 @@ export function CommodityCard({ item }: { item: Commodity }) {
             Produsen: <span className="text-foreground">{item.producer}</span>
           </p>
         </div>
-      </Link>
 
-      <div className="flex flex-col gap-3 border-t border-border p-4 pt-4">
-        <div>
-          <span className="font-heading text-xl font-semibold text-foreground">
-            {formatRupiah(item.price)}
-          </span>
-          <span className="text-sm text-muted-foreground"> / {item.unit}</span>
+        <div className="flex flex-col gap-3 border-t border-border p-4 pt-4">
+          <div>
+            <span className="font-heading text-xl font-semibold text-foreground">
+              {formatRupiah(item.price)}
+            </span>
+            <span className="text-sm text-muted-foreground"> / {item.unit}</span>
+          </div>
+          <button
+            type="button"
+            disabled={!item.inStock}
+            className="w-full cursor-pointer rounded-lg bg-white px-4 py-2.5 text-sm font-semibold text-accent transition-all hover:opacity-90 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
+          >
+            {item.inStock ? "Pesan" : "Stok Habis"}
+          </button>
         </div>
-        <button
-          type="button"
-          disabled={!item.inStock}
-          className="w-full cursor-pointer rounded-lg bg-white px-4 py-2.5 text-sm font-semibold text-accent transition-all hover:opacity-90 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40"
-        >
-          {item.inStock ? "Pesan" : "Stok Habis"}
-        </button>
-      </div>
-    </article>
+      </article>
+    </Link>
   )
 }
