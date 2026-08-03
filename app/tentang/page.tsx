@@ -27,7 +27,7 @@ export default function AboutPage() {
         <section className="mb-16">
           <div className="overflow-hidden rounded-2xl border border-border">
             <img
-              src="/images/desa-landscape.png"
+              src="/images/IMG_20260804_013418.png"
               alt="Pemandangan indah Desa Kapulogo dengan sawah hijau dan rumah-rumah tradisional"
               className="h-full w-full object-cover"
             />
