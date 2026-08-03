@@ -49,6 +49,7 @@ export default function AboutPage() {
               </p>
               <p className="mb-4 text-pretty leading-relaxed text-muted-foreground">
                 Sesuai dengan namanya yang berakar dari jejak sejarah rempah kapulaga, tradisi bertani di desa ini telah diwariskan kuat turun-temurun. Namun, masyarakat Kapulogo tidak hanya diam mengandalkan warisan masa lalu. Melalui motor penggerak BUMDes Bejo Lestari, para petani terus berinovasi mengelola alam secara berkelanjutan dan ramah lingkungan. Dari sinilah lahir komoditas-komoditas unggulan otentik, seperti budidaya Jahe Merah, kopi lokal pilihan, hingga dedikasi para perajin gula merah.
+              </p>
               <p className="text-pretty leading-relaxed text-muted-foreground">
                 Melalui platform Katalog Komoditas Kapulogo, kami memiliki satu komitmen tegas: memangkas rantai tengkulak yang merugikan. Kami menghubungkan hasil keringat dan produk berkualitas dari petani lokal secara langsung kepada Anda sebagai konsumen. Dengan langkah ini, transparansi harga terjaga, konsumen mendapatkan produk segar, dan yang terpenting, roda ekonomi masyarakat desa menjadi jauh lebih berdaya.
               </p>
