@@ -26,8 +26,7 @@ export function SiteFooter() {
               <li className="flex items-start gap-3">
                 <MapPin className="size-4 shrink-0 mt-0.5" aria-hidden="true" />
                 <span>
-                  Balai Desa Kapulogo<br />
-                  Dusun Kapulogo Tengah<br />
+                  Jalan Magelang Km. 29 Desa Kapulogoh<br />
                   Desa Kapulogo<br />
                   Kecamatan Kepil<br />
                   Kabupaten Wonosobo
