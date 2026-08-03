@@ -1,8 +1,8 @@
 export type Category =
-  | "Pertanian"
-  | "Perkebunan"
-  | "Peternakan"
-  | "Kerajinan"
+  | "Cabai"
+  | "Gula"
+  | "Kopi"
+  | "Padi"
 
 export type Commodity = {
   id: string
@@ -18,17 +18,17 @@ export type Commodity = {
 }
 
 export const categories: Category[] = [
-  "Pertanian",
-  "Perkebunan",
-  "Peternakan",
-  "Kerajinan",
+  "Cabai",
+  "Gula",
+  "Kopi",
+  "Padi",
 ]
 
 export const commodities: Commodity[] = [
   {
     id: "beras-organik",
     name: "Beras Organik Kapulogo",
-    category: "Pertanian",
+    category: "Padi",
     price: 16000,
     unit: "kg",
     image: "/images/beras-organik.png",
@@ -41,7 +41,7 @@ export const commodities: Commodity[] = [
   {
     id: "kopi-robusta",
     name: "Kopi Robusta Lereng",
-    category: "Perkebunan",
+    category: "Kopi",
     price: 85000,
     unit: "kg",
     image: "/images/kopi-robusta.png",
@@ -54,7 +54,7 @@ export const commodities: Commodity[] = [
   {
     id: "kapulaga",
     name: "Kapulaga Pilihan",
-    category: "Perkebunan",
+    category: "Kopi",
     price: 120000,
     unit: "kg",
     image: "/images/kapulaga.png",
@@ -68,7 +68,7 @@ export const commodities: Commodity[] = [
   {
     id: "gula-aren",
     name: "Gula Aren Cetak",
-    category: "Perkebunan",
+    category: "Gula",
     price: 28000,
     unit: "kg",
     image: "/images/gula-aren.png",
@@ -81,7 +81,7 @@ export const commodities: Commodity[] = [
   {
     id: "madu-hutan",
     name: "Madu Hutan Murni",
-    category: "Peternakan",
+    category: "Gula",
     price: 95000,
     unit: "botol 350ml",
     image: "/images/madu-hutan.png",
@@ -94,7 +94,7 @@ export const commodities: Commodity[] = [
   {
     id: "cabai-merah",
     name: "Cabai Merah Keriting",
-    category: "Pertanian",
+    category: "Cabai",
     price: 42000,
     unit: "kg",
     image: "/images/cabai-merah.png",
@@ -107,7 +107,7 @@ export const commodities: Commodity[] = [
   {
     id: "telur-ayam",
     name: "Telur Ayam Kampung",
-    category: "Peternakan",
+    category: "Padi",
     price: 3000,
     unit: "butir",
     image: "/images/telur-ayam.png",
@@ -120,7 +120,7 @@ export const commodities: Commodity[] = [
   {
     id: "sayur-bayam",
     name: "Bayam Hijau Segar",
-    category: "Pertanian",
+    category: "Cabai",
     price: 5000,
     unit: "ikat",
     image: "/images/sayur-bayam.png",
@@ -133,7 +133,7 @@ export const commodities: Commodity[] = [
   {
     id: "anyaman-bambu",
     name: "Anyaman Bambu Handmade",
-    category: "Kerajinan",
+    category: "Padi",
     price: 65000,
     unit: "buah",
     image: "/images/anyaman-bambu.png",
