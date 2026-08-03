@@ -25,6 +25,7 @@ export const categories: Category[] = [
 ]
 
 export const commodities: Commodity[] = [
+  // Padi - 3 produk
   {
     id: "beras-organik",
     name: "Beras Organik Kapulogo",
@@ -38,6 +39,31 @@ export const commodities: Commodity[] = [
     inStock: true,
     featured: true,
   },
+  {
+    id: "telur-ayam",
+    name: "Telur Ayam Kampung",
+    category: "Padi",
+    price: 3000,
+    unit: "butir",
+    image: "/images/telur-ayam.png",
+    description:
+      "Telur ayam kampung dari peternakan umbaran. Kuning telur pekat dan kaya nutrisi.",
+    producer: "Peternakan Berkah Tani",
+    inStock: true,
+  },
+  {
+    id: "anyaman-bambu",
+    name: "Anyaman Bambu Handmade",
+    category: "Padi",
+    price: 65000,
+    unit: "buah",
+    image: "/images/anyaman-bambu.png",
+    description:
+      "Kerajinan keranjang bambu buatan tangan pengrajin desa. Kuat, ramah lingkungan, dan estetis.",
+    producer: "Sanggar Bambu Kapulogo",
+    inStock: true,
+  },
+  // Kopi - 3 produk
   {
     id: "kopi-robusta",
     name: "Kopi Robusta Lereng",
@@ -61,10 +87,22 @@ export const commodities: Commodity[] = [
     description:
       "Rempah kapulaga hijau dengan aroma harum khas, dipetik dan dijemur secara alami. Komoditas ikonik desa.",
     producer: "Tani Rempah Lestari",
-
     inStock: true,
     featured: true,
   },
+  {
+    id: "kopi-robusta-premium",
+    name: "Kopi Robusta Premium",
+    category: "Kopi",
+    price: 95000,
+    unit: "kg",
+    image: "/images/kopi-robusta.png",
+    description:
+      "Kopi robusta pilihan dari hasil panen musim hujan dengan rasa yang lebih kaya dan kompleks.",
+    producer: "Koperasi Kopi Kapulogo",
+    inStock: true,
+  },
+  // Gula - 3 produk
   {
     id: "gula-aren",
     name: "Gula Aren Cetak",
@@ -75,7 +113,6 @@ export const commodities: Commodity[] = [
     description:
       "Gula aren murni hasil sadapan nira pohon aren, dimasak tradisional tanpa pemanis tambahan.",
     producer: "Pak Darto",
-
     inStock: true,
   },
   {
@@ -88,9 +125,21 @@ export const commodities: Commodity[] = [
     description:
       "Madu liar dari lebah hutan di sekitar desa. Mentah, tidak dipanaskan, dan kaya enzim alami.",
     producer: "Kelompok Madu Wana Sari",
-
     inStock: true,
   },
+  {
+    id: "gula-aren-premium",
+    name: "Gula Aren Premium",
+    category: "Gula",
+    price: 32000,
+    unit: "kg",
+    image: "/images/gula-aren.png",
+    description:
+      "Gula aren pilihan dengan warna lebih cerah dan kualitas premium dari pohon aren terpilih.",
+    producer: "Pak Darto",
+    inStock: true,
+  },
+  // Cabai - 3 produk
   {
     id: "cabai-merah",
     name: "Cabai Merah Keriting",
@@ -101,21 +150,7 @@ export const commodities: Commodity[] = [
     description:
       "Cabai merah keriting segar dipetik pagi hari. Pedas mantap, cocok untuk sambal dan masakan rumahan.",
     producer: "Kelompok Tani Maju Bersama",
-
     inStock: false,
-  },
-  {
-    id: "telur-ayam",
-    name: "Telur Ayam Kampung",
-    category: "Padi",
-    price: 3000,
-    unit: "butir",
-    image: "/images/telur-ayam.png",
-    description:
-      "Telur ayam kampung dari peternakan umbaran. Kuning telur pekat dan kaya nutrisi.",
-    producer: "Peternakan Berkah Tani",
-
-    inStock: true,
   },
   {
     id: "sayur-bayam",
@@ -127,20 +162,18 @@ export const commodities: Commodity[] = [
     description:
       "Bayam hijau segar tanpa pestisida, dipanen langsung dari kebun warga setiap pagi.",
     producer: "Kebun Sayur Lestari",
-
     inStock: true,
   },
   {
-    id: "anyaman-bambu",
-    name: "Anyaman Bambu Handmade",
-    category: "Padi",
-    price: 65000,
-    unit: "buah",
-    image: "/images/anyaman-bambu.png",
+    id: "cabai-merah-besar",
+    name: "Cabai Merah Besar",
+    category: "Cabai",
+    price: 48000,
+    unit: "kg",
+    image: "/images/cabai-merah.png",
     description:
-      "Kerajinan keranjang bambu buatan tangan pengrajin desa. Kuat, ramah lingkungan, dan estetis.",
-    producer: "Sanggar Bambu Kapulogo",
-
+      "Cabai merah besar dengan daging tebal, cocok untuk diisi atau dijadikan sambal.",
+    producer: "Kelompok Tani Maju Bersama",
     inStock: true,
   },
 ]
