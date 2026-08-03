@@ -81,6 +81,7 @@ export function Hero() {
         <div className="relative">
           <div className="overflow-hidden rounded-3xl border border-border">
             <img
+              key={currentSlide}
               src={heroSlides[currentSlide].image}
               alt={heroSlides[currentSlide].alt}
               className="h-full w-full object-cover transition-opacity duration-500"
