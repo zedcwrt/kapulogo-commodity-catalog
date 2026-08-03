@@ -74,7 +74,7 @@ export default function AboutPage() {
           <div className="grid gap-6 md:grid-cols-2">
             <div className="overflow-hidden rounded-2xl border border-border">
               <img
-                src="/images/petani-bekerja.png"
+                src="/images/petani-padi.jpeg"
                 alt="Petani Desa Kapulogo bekerja di sawah"
                 className="h-full w-full object-cover"
               />
