@@ -6,21 +6,21 @@ import { useState, useEffect } from "react"
 
 const heroSlides = [
   {
-    image: "/images/hero-desa.png",
+    image: "/images/IMG_9760.JPG.jpeg",
     alt: "Pemandangan persawahan dan perbukitan hijau Desa Kapulogo saat matahari terbenam",
     icon: Sprout,
     title: "Panen Segar",
     subtitle: "Setiap hari",
   },
   {
-    image: "/images/hero-desa-2.png",
+    image: "/images/IMG_9770.JPG.jpeg",
     alt: "Sawah hijau dengan petani bekerja di Desa Kapulogo saat sore hari",
     icon: Leaf,
     title: "Pertanian Organik",
     subtitle: "100% Alami",
   },
   {
-    image: "/images/hero-desa-3.png",
+    image: "/images/IMG_9771.JPG.jpeg",
     alt: "Pasar lokal Desa Kapulogo dengan penjual hasil bumi segar",
     icon: Users,
     title: "Komunitas Lokal",
