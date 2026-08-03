@@ -76,27 +76,6 @@ export function Hero() {
               Tentang Desa
             </Link>
           </div>
-
-          <dl className="mt-10 flex gap-8">
-            <div>
-              <dt className="text-sm text-muted-foreground">Komoditas</dt>
-              <dd className="font-heading text-2xl font-semibold text-foreground">
-                9+
-              </dd>
-            </div>
-            <div>
-              <dt className="text-sm text-muted-foreground">Kelompok Tani</dt>
-              <dd className="font-heading text-2xl font-semibold text-foreground">
-                8
-              </dd>
-            </div>
-            <div>
-              <dt className="text-sm text-muted-foreground">Tanpa Pestisida</dt>
-              <dd className="font-heading text-2xl font-semibold text-foreground">
-                100%
-              </dd>
-            </div>
-          </dl>
         </div>
 
         <div className="relative">
