@@ -28,18 +28,24 @@ export function About() {
               Tentang Desa
             </p>
             <h2 className="mt-2 text-balance font-heading text-3xl font-semibold text-foreground md:text-4xl">
-              Kapulogo, Lumbung Hasil Bumi yang Subur
+              Kapulogo: Jejak Rempah dan Lumbung Tani di Ujung Wonosobo
             </h2>
             <p className="mt-5 text-pretty leading-relaxed text-muted-foreground">
-              Desa Kapulogo dikenal dengan tanahnya yang subur dan tradisi
-              bertani turun-temurun. Berlokasi di lereng perbukitan, desa ini
-              menghasilkan beragam komoditas berkualitas yang dikelola langsung
-              oleh kelompok tani setempat.
+              Desa Kapulogo yang terletak di Kecamatan Kepil ini memiliki sejarah yang unik, 
+              di mana namanya sendiri diambil dari komoditas rempah kapulaga. Biarpun berstatus 
+              wilayah Wonosobo, letaknya yang persis di perbatasan membuat kultur dan dialek 
+              warganya lebih dekat ke arah Magelang maupun Purworejo. Tanah di tiga dusun 
+              utamanya—Kulon, Tengah, dan Wetan—dikenal sangat subur. 
+              Desa ini tidak hanya menghasilkan komoditas andalan seperti kopi dan perajin
+              gula merah, tetapi juga sukses membudidayakan Jahe Merah melalui program BUMDes
+              Bejo Lestari.
             </p>
             <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-              Melalui katalog ini, kami menghubungkan hasil panen petani desa
-              dengan pembeli secara langsung — memastikan harga yang adil bagi
-              petani dan produk segar bagi Anda.
+              Melalui katalog digital ini, kami ingin memutus rantai distribusi tengkulak
+              yang terlalu panjang. Visi kami sangat jelas: membawa hasil bumi dan kerajinan
+              Kapulogo langsung dari tangan pertama para petani lokal ke depan pintu Anda.
+              Pembeli mendapatkan jaminan kualitas produk paling segar 100% alami, dan masyarakat 
+              desa mendapatkan harga jual yang jauh lebih adil dan memanusiakan.
             </p>
           </div>
 
