@@ -59,7 +59,7 @@ export default function AboutPage() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31645.020575554856!2d109.99158687649684!3d-7.506301470095431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a97131c2c76b1%3A0x5027a76e3557940!2sKapulogo%2C%20Kepil%2C%20Wonosobo%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1785778404386!5m2!1sen!2sid"
                 width="100%"
-                height="500"
+                height="300"
                 style={{ border: 0 }}
                 allowFullScreen={true}
                 loading="lazy"
