@@ -45,13 +45,12 @@ export default function AboutPage() {
                 Kapulogo, Lumbung Hasil Bumi yang Subur
               </h2>
               <p className="mb-4 text-pretty leading-relaxed text-muted-foreground">
-                Desa Kapulogo merupakan sebuah desa yang kaya akan potensi pertanian dengan tanah yang sangat subur. Terletak di lereng perbukitan yang strategis, desa ini memiliki iklim tropis ideal yang mendukung pertumbuhan berbagai jenis komoditas berkualitas.
+                Desa Kapulogo bukanlah sekadar wilayah biasa di tapal batas Wonosobo. Terletak strategis di lereng perbukitan dengan iklim yang ideal, tanah subur yang membentang di tiga dusun utamanya—Kulon, Tengah, dan Wetan—menjadi lumbung bagi pertumbuhan berbagai komoditas pertanian berkualitas tinggi. Keunikan letaknya yang berbatasan langsung dengan kabupaten lain membuat budaya dan dialek masyarakatnya membaur harmonis dengan wilayah Magelang dan Purworejo.
               </p>
               <p className="mb-4 text-pretty leading-relaxed text-muted-foreground">
-                Sejak dahulu, masyarakat Desa Kapulogo memiliki tradisi bertani yang kuat turun-temurun. Dengan pengetahuan dan keahlian yang telah diwariskan dari generasi ke generasi, para petani desa terus berinovasi dan mengembangkan praktik pertanian yang berkelanjutan dan ramah lingkungan.
-              </p>
+                Sesuai dengan namanya yang berakar dari jejak sejarah rempah kapulaga, tradisi bertani di desa ini telah diwariskan kuat turun-temurun. Namun, masyarakat Kapulogo tidak hanya diam mengandalkan warisan masa lalu. Melalui motor penggerak BUMDes Bejo Lestari, para petani terus berinovasi mengelola alam secara berkelanjutan dan ramah lingkungan. Dari sinilah lahir komoditas-komoditas unggulan otentik, seperti budidaya Jahe Merah, kopi lokal pilihan, hingga dedikasi para perajin gula merah.
               <p className="text-pretty leading-relaxed text-muted-foreground">
-                Melalui platform Katalog Komoditas Kapulogo, kami berkomitmen untuk menghubungkan produk berkualitas dari petani lokal langsung kepada konsumen, memastikan transparansi harga, dan memberdayakan ekonomi desa.
+                Melalui platform Katalog Komoditas Kapulogo, kami memiliki satu komitmen tegas: memangkas rantai tengkulak yang merugikan. Kami menghubungkan hasil keringat dan produk berkualitas dari petani lokal secara langsung kepada Anda sebagai konsumen. Dengan langkah ini, transparansi harga terjaga, konsumen mendapatkan produk segar, dan yang terpenting, roda ekonomi masyarakat desa menjadi jauh lebih berdaya.
               </p>
             </div>
 
@@ -101,13 +100,13 @@ export default function AboutPage() {
                 Sejarah dan Perkembangan
               </h2>
               <p className="mb-3 text-muted-foreground">
-                Desa Kapulogo memulai dengan komunitas petani kecil yang bertani untuk kebutuhan lokal. Seiring waktu, dengan dedikasi dan kerja keras, desa ini berkembang menjadi pusat produksi komoditas unggulan yang dikenal di berbagai wilayah.
+                Sejarah Desa Kapulogo tidak bisa dilepaskan dari jejak masa lalunya yang erat dengan kekayaan rempah Nusantara. Sesuai dengan namanya yang diyakini berakar dari komoditas kapulaga, desa ini bermula dari komunitas agraris sederhana yang mendiami tiga dusun utama—Kulon, Tengah, dan Wetan. Melalui dedikasi yang diwariskan turun-temurun, masyarakat perlahan membangun pondasi ekonomi yang kuat dari hasil bumi perbukitan Wonosobo.
               </p>
               <p className="mb-3 text-muted-foreground">
-                Pada era modern ini, Desa Kapulogo terus berinovasi dengan mengadopsi teknologi dan praktik pertanian terkini. Pembentukan kelompok-kelompok tani yang terstruktur membantu meningkatkan produktivitas dan kualitas hasil panen secara konsisten.
+                Seiring berjalannya waktu, Kapulogo terus beradaptasi tanpa meninggalkan akar tradisinya. Era baru pertanian di desa ini ditandai dengan hadirnya BUMDes Bejo Lestari dan pembentukan kelompok-kelompok tani yang lebih terstruktur. Melalui wadah ini, warga mulai berinovasi dan melebarkan sayap ke komoditas bernilai tinggi, seperti budidaya Jahe Merah, pengolahan kopi lokal, hingga mempertahankan eksistensi perajin gula merah.
               </p>
               <p className="text-muted-foreground">
-                Visi Desa Kapulogo ke depan adalah menjadi pusat pertanian berkelanjutan yang mampu menyediakan produk berkualitas premium sambil menjaga kelestarian lingkungan dan meningkatkan kesejahteraan masyarakat lokal.
+                Visi Desa Kapulogo ke depan adalah bertransformasi menjadi pusat pertanian berkelanjutan di wilayah perbatasan. Dengan menjaga keseimbangan alam dan memanfaatkan teknologi digital seperti katalog ini, Kapulogo optimis mampu mendistribusikan produk premium secara luas, sekaligus mendongkrak kesejahteraan ekonomi warganya secara mandiri.
               </p>
             </div>
           </div>
