@@ -1,8 +1,8 @@
 export type Category =
-  | "Pertanian"
-  | "Perkebunan"
-  | "Peternakan"
-  | "Kerajinan"
+  | "Cabai"
+  | "Gula"
+  | "Kopi"
+  | "Padi"
 
 export type Commodity = {
   id: string
@@ -18,17 +18,18 @@ export type Commodity = {
 }
 
 export const categories: Category[] = [
-  "Pertanian",
-  "Perkebunan",
-  "Peternakan",
-  "Kerajinan",
+  "Cabai",
+  "Gula",
+  "Kopi",
+  "Padi",
 ]
 
 export const commodities: Commodity[] = [
+  // Padi - 3 produk (duplikasi Beras Organik)
   {
-    id: "beras-organik",
+    id: "beras-organik-1",
     name: "Beras Organik Kapulogo",
-    category: "Pertanian",
+    category: "Padi",
     price: 16000,
     unit: "kg",
     image: "/images/beras-organik.png",
@@ -39,9 +40,34 @@ export const commodities: Commodity[] = [
     featured: true,
   },
   {
-    id: "kopi-robusta",
+    id: "beras-organik-2",
+    name: "Beras Organik Kapulogo",
+    category: "Padi",
+    price: 16000,
+    unit: "kg",
+    image: "/images/beras-organik.png",
+    description:
+      "Beras pulen hasil panen sawah tadah hujan tanpa pestisida kimia. Ditanam dengan metode organik turun-temurun.",
+    producer: "Kelompok Tani Sri Rejeki",
+    inStock: true,
+  },
+  {
+    id: "beras-organik-3",
+    name: "Beras Organik Kapulogo",
+    category: "Padi",
+    price: 16000,
+    unit: "kg",
+    image: "/images/beras-organik.png",
+    description:
+      "Beras pulen hasil panen sawah tadah hujan tanpa pestisida kimia. Ditanam dengan metode organik turun-temurun.",
+    producer: "Kelompok Tani Sri Rejeki",
+    inStock: true,
+  },
+  // Kopi - 3 produk (duplikasi Kopi Robusta)
+  {
+    id: "kopi-robusta-1",
     name: "Kopi Robusta Lereng",
-    category: "Perkebunan",
+    category: "Kopi",
     price: 85000,
     unit: "kg",
     image: "/images/kopi-robusta.png",
@@ -52,96 +78,102 @@ export const commodities: Commodity[] = [
     featured: true,
   },
   {
-    id: "kapulaga",
-    name: "Kapulaga Pilihan",
-    category: "Perkebunan",
-    price: 120000,
+    id: "kopi-robusta-2",
+    name: "Kopi Robusta Lereng",
+    category: "Kopi",
+    price: 85000,
     unit: "kg",
-    image: "/images/kapulaga.png",
+    image: "/images/kopi-robusta.png",
     description:
-      "Rempah kapulaga hijau dengan aroma harum khas, dipetik dan dijemur secara alami. Komoditas ikonik desa.",
-    producer: "Tani Rempah Lestari",
-
+      "Biji kopi robusta dari kebun di lereng bukit ketinggian 800 mdpl. Aroma kuat dengan sentuhan cokelat.",
+    producer: "Koperasi Kopi Kapulogo",
     inStock: true,
-    featured: true,
   },
   {
-    id: "gula-aren",
+    id: "kopi-robusta-3",
+    name: "Kopi Robusta Lereng",
+    category: "Kopi",
+    price: 85000,
+    unit: "kg",
+    image: "/images/kopi-robusta.png",
+    description:
+      "Biji kopi robusta dari kebun di lereng bukit ketinggian 800 mdpl. Aroma kuat dengan sentuhan cokelat.",
+    producer: "Koperasi Kopi Kapulogo",
+    inStock: true,
+  },
+  // Gula - 3 produk (duplikasi Gula Aren)
+  {
+    id: "gula-aren-1",
     name: "Gula Aren Cetak",
-    category: "Perkebunan",
+    category: "Gula",
     price: 28000,
     unit: "kg",
     image: "/images/gula-aren.png",
     description:
       "Gula aren murni hasil sadapan nira pohon aren, dimasak tradisional tanpa pemanis tambahan.",
     producer: "Pak Darto",
-
     inStock: true,
   },
   {
-    id: "madu-hutan",
-    name: "Madu Hutan Murni",
-    category: "Peternakan",
-    price: 95000,
-    unit: "botol 350ml",
-    image: "/images/madu-hutan.png",
+    id: "gula-aren-2",
+    name: "Gula Aren Cetak",
+    category: "Gula",
+    price: 28000,
+    unit: "kg",
+    image: "/images/gula-aren.png",
     description:
-      "Madu liar dari lebah hutan di sekitar desa. Mentah, tidak dipanaskan, dan kaya enzim alami.",
-    producer: "Kelompok Madu Wana Sari",
-
+      "Gula aren murni hasil sadapan nira pohon aren, dimasak tradisional tanpa pemanis tambahan.",
+    producer: "Pak Darto",
     inStock: true,
   },
   {
-    id: "cabai-merah",
+    id: "gula-aren-3",
+    name: "Gula Aren Cetak",
+    category: "Gula",
+    price: 28000,
+    unit: "kg",
+    image: "/images/gula-aren.png",
+    description:
+      "Gula aren murni hasil sadapan nira pohon aren, dimasak tradisional tanpa pemanis tambahan.",
+    producer: "Pak Darto",
+    inStock: true,
+  },
+  // Cabai - 3 produk (duplikasi Cabai Merah Keriting)
+  {
+    id: "cabai-merah-1",
     name: "Cabai Merah Keriting",
-    category: "Pertanian",
+    category: "Cabai",
     price: 42000,
     unit: "kg",
     image: "/images/cabai-merah.png",
     description:
       "Cabai merah keriting segar dipetik pagi hari. Pedas mantap, cocok untuk sambal dan masakan rumahan.",
     producer: "Kelompok Tani Maju Bersama",
-
     inStock: false,
   },
   {
-    id: "telur-ayam",
-    name: "Telur Ayam Kampung",
-    category: "Peternakan",
-    price: 3000,
-    unit: "butir",
-    image: "/images/telur-ayam.png",
+    id: "cabai-merah-2",
+    name: "Cabai Merah Keriting",
+    category: "Cabai",
+    price: 42000,
+    unit: "kg",
+    image: "/images/cabai-merah.png",
     description:
-      "Telur ayam kampung dari peternakan umbaran. Kuning telur pekat dan kaya nutrisi.",
-    producer: "Peternakan Berkah Tani",
-
-    inStock: true,
+      "Cabai merah keriting segar dipetik pagi hari. Pedas mantap, cocok untuk sambal dan masakan rumahan.",
+    producer: "Kelompok Tani Maju Bersama",
+    inStock: false,
   },
   {
-    id: "sayur-bayam",
-    name: "Bayam Hijau Segar",
-    category: "Pertanian",
-    price: 5000,
-    unit: "ikat",
-    image: "/images/sayur-bayam.png",
+    id: "cabai-merah-3",
+    name: "Cabai Merah Keriting",
+    category: "Cabai",
+    price: 42000,
+    unit: "kg",
+    image: "/images/cabai-merah.png",
     description:
-      "Bayam hijau segar tanpa pestisida, dipanen langsung dari kebun warga setiap pagi.",
-    producer: "Kebun Sayur Lestari",
-
-    inStock: true,
-  },
-  {
-    id: "anyaman-bambu",
-    name: "Anyaman Bambu Handmade",
-    category: "Kerajinan",
-    price: 65000,
-    unit: "buah",
-    image: "/images/anyaman-bambu.png",
-    description:
-      "Kerajinan keranjang bambu buatan tangan pengrajin desa. Kuat, ramah lingkungan, dan estetis.",
-    producer: "Sanggar Bambu Kapulogo",
-
-    inStock: true,
+      "Cabai merah keriting segar dipetik pagi hari. Pedas mantap, cocok untuk sambal dan masakan rumahan.",
+    producer: "Kelompok Tani Maju Bersama",
+    inStock: false,
   },
 ]
 
