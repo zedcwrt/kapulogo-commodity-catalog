@@ -58,9 +58,10 @@ export function Hero() {
             Hasil Bumi Terbaik, Langsung dari Petani Desa
           </h1>
           <p className="mt-5 max-w-md text-pretty leading-relaxed text-muted-foreground">
-            Jelajahi katalog komoditas unggulan Desa Kapulogo — mulai dari beras
-            organik, kopi, kapulaga, madu hutan, hingga kerajinan bambu. Segar,
-            berkualitas, dan berkelanjutan.
+            Jelajahi kekayaan alam asli dari lereng perbukitan Desa Kapulogo—mulai dari 
+            rempah kapulaga yang ikonik, biji kopi lokal pilihan, hingga olahan gula 
+            merah murni. Dipanen langsung oleh tangan petani desa, dijamin kualitasnya 
+            segar, adil, dan tanpa perantara tengkulak.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
