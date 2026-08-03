@@ -6,18 +6,6 @@ export const metadata = {
   description: 'Pelajari lebih lanjut tentang Desa Kapulogo, sejarah, budaya, dan komunitas pertanian yang subur.',
 }
 
-const commodities = [
-  { name: 'Beras Organik', category: 'Pertanian' },
-  { name: 'Kopi Robusta', category: 'Perkebunan' },
-  { name: 'Kapulaga', category: 'Perkebunan' },
-  { name: 'Gula Aren', category: 'Perkebunan' },
-  { name: 'Madu Hutan', category: 'Hasil Hutan' },
-  { name: 'Cabai Merah', category: 'Pertanian' },
-  { name: 'Telur Ayam Kampung', category: 'Peternakan' },
-  { name: 'Sayur Bayam', category: 'Pertanian' },
-  { name: 'Anyaman Bambu', category: 'Kerajinan' },
-]
-
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
@@ -125,29 +113,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Komoditas Unggulan */}
-        <section className="mb-16">
-          <p className="mb-2 text-sm font-medium uppercase tracking-widest text-accent">
-            Produk Unggulan
-          </p>
-          <h2 className="mb-8 font-heading text-3xl font-semibold text-foreground">
-            Komoditas Desa Kapulogo
-          </h2>
-          <div className="grid gap-3 md:grid-cols-3">
-            {commodities.map((commodity) => (
-              <div
-                key={commodity.name}
-                className="flex items-center justify-between rounded-lg border border-border bg-card px-4 py-3 transition-colors hover:bg-secondary"
-              >
-                <span className="font-medium text-foreground">{commodity.name}</span>
-                <span className="inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
-                  {commodity.category}
-                </span>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* Nilai Desa */}
         <section className="mb-16">
           <p className="mb-2 text-sm font-medium uppercase tracking-widest text-accent">
@@ -180,31 +145,6 @@ export default function AboutPage() {
               <p className="text-sm text-muted-foreground">
                 Rantai pasokan yang jelas dan harga yang adil untuk petani dan konsumen.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Statistik */}
-        <section className="mb-16 rounded-2xl border border-border bg-primary/5 p-8 md:p-12">
-          <h2 className="mb-8 text-center font-heading text-2xl font-semibold text-foreground">
-            Desa Kapulogo Dalam Angka
-          </h2>
-          <div className="grid gap-8 md:grid-cols-4">
-            <div className="text-center">
-              <div className="font-heading text-4xl font-bold text-primary">9+</div>
-              <p className="mt-2 text-sm text-muted-foreground">Komoditas Unggulan</p>
-            </div>
-            <div className="text-center">
-              <div className="font-heading text-4xl font-bold text-primary">8</div>
-              <p className="mt-2 text-sm text-muted-foreground">Kelompok Tani Aktif</p>
-            </div>
-            <div className="text-center">
-              <div className="font-heading text-4xl font-bold text-primary">100%</div>
-              <p className="mt-2 text-sm text-muted-foreground">Organik Bersertifikat</p>
-            </div>
-            <div className="text-center">
-              <div className="font-heading text-4xl font-bold text-primary">500+</div>
-              <p className="mt-2 text-sm text-muted-foreground">Petani Lokal</p>
             </div>
           </div>
         </section>
