@@ -149,7 +149,7 @@ export const commodities: Commodity[] = [
     description:
       "Cabai merah keriting segar dipetik pagi hari. Pedas mantap, cocok untuk sambal dan masakan rumahan.",
     producer: "Kelompok Tani Maju Bersama",
-    inStock: false,
+    inStock: true,
   },
   {
     id: "cabai-merah-2",
@@ -161,7 +161,7 @@ export const commodities: Commodity[] = [
     description:
       "Cabai merah keriting segar dipetik pagi hari. Pedas mantap, cocok untuk sambal dan masakan rumahan.",
     producer: "Kelompok Tani Maju Bersama",
-    inStock: false,
+    inStock: true,
   },
   {
     id: "cabai-merah-3",
@@ -173,7 +173,7 @@ export const commodities: Commodity[] = [
     description:
       "Cabai merah keriting segar dipetik pagi hari. Pedas mantap, cocok untuk sambal dan masakan rumahan.",
     producer: "Kelompok Tani Maju Bersama",
-    inStock: false,
+    inStock: true,
   },
 ]
 
