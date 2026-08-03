@@ -81,7 +81,7 @@ export default function AboutPage() {
             </div>
             <div className="overflow-hidden rounded-2xl border border-border">
               <img
-                src="/images/panen-organik.png"
+                src="/images/pkk.jpeg"
                 alt="Panen organik hasil bumi Desa Kapulogo"
                 className="h-full w-full object-cover"
               />
@@ -152,7 +152,7 @@ export default function AboutPage() {
         <section className="mb-16">
           <div className="overflow-hidden rounded-2xl border border-border">
             <img
-              src="/images/komunitas-desa.png"
+              src="/images/rame-rame.jpeg"
               alt="Komunitas Desa Kapulogo berkumpul dengan semangat gotong royong"
               className="h-full w-full object-cover"
             />
