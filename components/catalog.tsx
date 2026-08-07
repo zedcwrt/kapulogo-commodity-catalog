@@ -3,11 +3,11 @@
 import { Search } from "lucide-react"
 import { useMemo, useState } from "react"
 import { CommodityCard } from "@/components/commodity-card"
-import { categories, commodities } from "@/lib/commodities"
+import { categories, type Commodity } from "@/lib/commodities"
 
 const filters = ["Semua", ...categories] as const
 
-export function Catalog() {
+export function Catalog({ commodities }: { commodities: Commodity[] }) {
   const [active, setActive] = useState<(typeof filters)[number]>("Semua")
   const [query, setQuery] = useState("")
 
@@ -22,7 +22,7 @@ export function Catalog() {
         item.producer.toLowerCase().includes(q)
       return matchCategory && matchQuery
     })
-  }, [active, query])
+  }, [active, query, commodities])
 
   return (
     <section id="katalog" className="mx-auto max-w-6xl px-4 py-20 md:px-6">

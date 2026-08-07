@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Tentang", href: "/tentang", hash: undefined },
   { label: "KKN", href: "/kkn", hash: undefined },
   { label: "Kontak", href: "/", hash: "kontak" },
+  { label: "Admin", href: "/admin", hash: undefined },
 ]
 
 export function SiteHeader() {

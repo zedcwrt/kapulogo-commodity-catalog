@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import { ArrowLeft, Star, Truck, Shield, RotateCcw } from 'lucide-react'
-import { commodities, formatRupiah } from '@/lib/commodities'
+import { ArrowLeft } from 'lucide-react'
+import { getProduct, getProducts } from '@/lib/products'
 import { ProductDetailClient } from '@/components/product-detail-client'
 
 export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
-  const product = commodities.find((c) => c.id === id)
+  const product = await getProduct(id)
 
   if (!product) {
     return (
@@ -28,7 +28,8 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
     )
   }
 
-  const relatedProducts = commodities.filter(
+  const all = await getProducts()
+  const relatedProducts = all.filter(
     (c) => c.category === product.category && c.id !== product.id
   )
 
